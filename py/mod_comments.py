@@ -50,7 +50,7 @@ def printStats(gl, soup, adminPageEx):
 					else:
 						secondaryCol=gl.numCol
 					cnt+=1
-					if(c[0]=='0'):
+					if(c[1]=='0'):
 						print('$font' + gl.textCol+ c[0] +'$alignr '+ gl.numCol + c[1])
 					else:						
 						print('$font' + gl.textCol+ c[0] +'$alignr '+ secondaryCol + c[1])
