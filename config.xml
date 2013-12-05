@@ -1,0 +1,50 @@
+<!-- Use this file to configure your WP-Login-Information and the Conky styling -->
+<!-- More styling options coming soon -->
+<configuration>
+	<login>
+		<!-- use your WP username or mail-address -->
+		<username>Your_WordPress_Username</username>
+		<password>Your_wordPress_Password</password>
+		<!-- blogUrl starts with https and please no "/" at the End -->
+		<blogurl>https://evilshit.wordpress.com</blogurl>
+	</login>
+	<sections>
+		<!-- Set to 'false' to deactivate the section -->
+		<!-- and remember to do a image pos. correction under <tweaks> -->
+		<title>true</title>		
+		<overview>true</overview>
+		<comments>true</comments>
+		<authors>true</authors>
+		<mytopposts>true</mytopposts>
+		<alltopposts>true</alltopposts>
+	</sections>
+	<tweaks>
+		<!-- set to true or false to show or hide the logo -->		
+		<conkypresslogo>true</conkypresslogo>
+		<!-- set this to 'true' if you don't want images at all -->		
+		<!-- users without 'Imlib2' should set this to 'true' -->
+		<noimages>false</noimages>
+		<!-- space between the sections -->
+		<sectionoffset>5</sectionoffset>
+		<!-- neg. or pos. value, used to finetune the y-pos. of images -->
+		<imagecorrection>+0</imagecorrection>
+		<!-- neg. or pos. value, used to finetune space between images -->
+		<imagespacecorrection>+0</imagespacecorrection>
+		<!-- After how many character should the text be shortened -->
+		<maxtextlength>40</maxtextlength>
+	</tweaks>
+	<styling>
+		<!-- List of color names: http://www.graphviz.org/doc/info/colors.html -->
+		<titlecolor>cornflowerblue</titlecolor>
+		<timecolor>Ivory</timecolor>
+		<topiccolor>cornflowerblue</topiccolor>
+		<topiclinecolor>Ivory</topiclinecolor>
+		<textcolor>Ivory</textcolor>
+		<numbercolor>cornflowerblue</numbercolor>
+		<pendingcolor>orange1</pendincolor>
+		<spamcolor>red3</spamcolor>
+		<!-- Used to color your own posts in ALL-TOP-POSTS -->
+		<mytextcolor>gold2</mytextcolor>
+		<mynumbercolor>gold2</mynumbercolor>
+	</styling>
+</configuration>
