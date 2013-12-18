@@ -12,9 +12,9 @@ def printStats(gl, soup, loginEx):
 	verticalSpace = 10
 	imgSpace = 8+imgSpCor
 	if loginEx == 'true':
-		imgOffset = 255+imgCor+15
+		imgOffset = 270+imgCor+15
 	else:
-		imgOffset = 255+imgCor
+		imgOffset = 270+imgCor
 	authors=[]
 	# Start parsing the contents of html
 
