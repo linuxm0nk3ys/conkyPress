@@ -2,7 +2,7 @@ conkyPress
 ==========
 ConkyPress a WordPress stats visualization tool for your desktop
 
-Version: 1.0.5 , 
+Version: 1.0.6 , 
 Author : Drunk3nm0nk3y , 
 Website: http://wp.me/p2nic6-eP
 
@@ -63,14 +63,16 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 
 6. CHANGELOG
 ---------------------
-* v1.0.1: 
--- Fixed session login problem in login.py, leading to errors in comment section
--- Fixed some typos in the comments of conkyPressRc
-* v1.0.2: 
--- Fixed alignment of numbers in authors sections
--- Fixed exception in "all-top-posts" section if the user has no posts in it
--- Added option in the config.xml to set the space between the sections 
--- Removed the "-q" option in the startscript, so users can see any error messages
+* v1.0.6
+-- Added number of yesterdays visitors to the overview section
+* v1.0.5
+-- Fixed/adapted parsing of the comments stats (WordPress changed some stuff)
+-- Improvement, showing an "other posts" entry in the "my top posts" section if there are to many posts to display
+* v1.0.4
+-- Fixed character encoding in the all-top-posts section
+-- Added different colors for pending and spam comments
+-- Added entrys in config.xml for comment section colors
+-- Improved notation of colors in the config.xml
 * v1.0.3:
 -- Improved stop-script, it now kills all running ConkyPress instances
 -- Improvement, less memory consumption
@@ -80,14 +82,14 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 -- Added comment for Xfce users in the conkyPressRc
 -- Added comments in the conkyPressRc, for users who want to customize the look an transparency
 -- Removed unnecessary options from the conkyPressRc
-* v1.0.4
--- Fixed character encoding in the all-top-posts section
--- Added different colors for pending and spam comments
--- Added entrys in config.xml for comment section colors
--- Improved notation of colors in the config.xml
-* v1.0.5
--- Fixed/adapted parsing of the comments stats (WordPress changed some stuff)
--- Improvement, showing an "other posts" entry in the "my top posts" section if there are to many posts to display
+* v1.0.2: 
+-- Fixed alignment of numbers in authors sections
+-- Fixed exception in "all-top-posts" section if the user has no posts in it
+-- Added option in the config.xml to set the space between the sections 
+-- Removed the "-q" option in the startscript, so users can see any error messages
+* v1.0.1: 
+-- Fixed session login problem in login.py, leading to errors in comment section
+-- Fixed some typos in the comments of conkyPressRc
 
 7. ACKNOWLEDGMENT
 ---------------------

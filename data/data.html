@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  lang="en">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Site Stats &lsaquo; Linux M0nk3ys &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp-admin/admin-ajax.php',
+	pagenow = 'dashboard_page_stats',
+	typenow = '',
+	adminpage = 'dashboard_page_stats',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=3.9-alpha' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://s2.wp.com/_static/??-eJx9j0sOwjAMRC9EakEXpQvEWfKDBrlxFDtU3J6oEkVEosux39gzsCQVosXiPINlBqd5CpYid3OIXZ0coEW0qytldP5Bqkd8FJiLSljuITJwMWxzSBLqPbgRIi17/ERPn5UpxmB9xfJCv4dnj1q8U4lYGrXZ1qxr6o/438sUkbb4128JKW/L63w59ufhNPZDPz7eZ314yg==' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='https://s1.wp.com/wp-admin/css/ie.min.css?m=1386608226g&#038;ver=3.9-alpha' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-4' href='https://s1.wp.com/_static/??-eJyFUdtOwzAM/SG8iDFN5QHxLcYJbbY4iWIHtL/HLXRCKipPto+Pj2/us0LMlLoP4kjEWYxdJ6Ap0PXAMR8MfZhhKllDVscdaupjzOLQGwHesFmeCsM93hRdxElIgfS42g3lu3iVNjnuOeoNFMcxtA2wNxfXs8FcURd3QrrKHn9splzykkJSeC+Nl2twyB0w6douulw0Gk3uzp6uccKvK8HHf1vXItY9YWzmpuTR+9ufg8xvmit/fmbLzvgrvzw+DefhdBxOz5cvc/uwLw==' type='text/css' media='all' />
+<script type="text/javascript">
+if (window.top !== window.self) {
+    window.top.location.href = window.self.location.href; }
+</script><script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"34974800","time":"1387325399"};
+var userSettings = {"url":"\/","uid":"34974800","time":"1387325399"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFkOsKwjAMhV/IrpuK+Ed8lq3LSmYvs00cvr2dOplYJhRCz/lITiLHQaBThluIsk/vyhDu71L0cSPXAGFRh5qgsOhmWHlH4EhaFoNhjS7KyE1UAQdCn36dN8aPud5MaOKy19KMQ17/TvyHYpxBxkL5kE0+DQMDirZzzVF1m8TPispbyw7pLqjWGsKPsHKeEVsNFCXcktEEJJgivFTxHJPbqANom1pdkne2p2p3PJTVblvu+wf7R64E'></script>
+
+		<style type="text/css" media="screen">
+		/*<![CDATA[*/
+
+			/* Menu - Normal */
+			li#menu-upgrades .wp-menu-image {
+				background-image: url('/wp-content/admin-plugins/wpcom-billing/images/store-cart-16.png');
+				background-repeat: no-repeat;
+				background-position: 7px 7px;
+				opacity: .6;
+				filter: alpha(opacity=60);
+			}
+
+			/* Menu - Hover/Current */
+			li#menu-upgrades:hover .wp-menu-image,
+			li#menu-upgrades.wp-has-current-submenu .wp-menu-image {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+
+			body.mp6 #adminmenu .menu-icon-store div.wp-menu-image {
+				background: none !important;
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+
+			body.mp6 #adminmenu .menu-icon-store div.wp-menu-image:before {
+				content: '\f174';
+				margin-left: -1px;
+			}
+
+			/* Icon 32 */
+			#icon-store {
+				background-image: url('/wp-content/admin-plugins/wpcom-billing/images/store-cart-32.png');
+				background-repeat: no-repeat;
+			}
+
+			/* HiDPI */
+			@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+				/* Menu - 2x */
+				li#menu-upgrades .wp-menu-image,
+				li#menu-upgrades:hover .wp-menu-image,
+				li#menu-upgrades.wp-has-current-submenu .wp-menu-image {
+					background-image: url('/wp-content/admin-plugins/wpcom-billing/images/store-cart-16-2x.png');
+					background-size: 16px 16px;
+				}
+
+				/* Icon 32 - 2x */
+				#icon-store {
+					background-image: url('/wp-content/admin-plugins/wpcom-billing/images/store-cart-32-2x.png');
+					background-size: 32px 32px;
+				}
+			}
+
+		/*]]>*/
+		</style>
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<style type="text/css">
+/* metaboxes */
+ul.metabox-tabs {
+	margin-bottom: 5px;
+	padding: 0 10px 0 10px;
+	background: #e1e1e1;}
+ul.metabox-tabs {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#general ul.metabox-tabs {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+ul.metabox-tabs {
+	height: 24px;
+	margin-top: -11px !important;
+}
+ul.metabox-tabs li {
+	list-style: none;
+	display: inline;
+	font-size: 11px;
+}
+ul.metabox-tabs li.tab a {
+	display: block;
+	float: left;
+	margin-right: 4px;
+
+	padding: 5px 6px;
+	filter:alpha(opacity=50);
+	opacity: .5;
+	-webkit-opacity: .5;
+	-moz-opacity: .5;
+	background: #fff;
+	color: #000;
+	color: #454545\9; /* IE8 and below */
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	font-weight: bold;
+	text-decoration: none;
+	zoom: 1;
+}
+ul.metabox-tabs li.tab a {
+	/* for some reason, opacity doesn't work in IE */
+	background: #f0f0f0\9; /* IE8 and below */
+}
+ul.metabox-tabs li.tab a.active,
+ul.metabox-tabs li.tab a:hover {
+	background: #fff;
+	opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=100);
+
+		color: #454545;
+	}
+body.admin-color-fresh ul.metabox-tabs,
+body.admin-color-classic ul.metabox-tabs,
+body.mp6 ul.metabox-tabs {
+		background: #fff;
+	border-bottom: 1px solid #dedede;
+	}
+body.admin-color-fresh ul.metabox-tabs li.tab a,
+body.admin-color-classic ul.metabox-tabs li.tab a,
+body.mp6 ul.metabox-tabs li.tab a {
+	-moz-box-shadow: inset 0 1px 0 white;
+	-webkit-box-shadow: inset 0 1px 0 white;
+	box-shadow: inset 0 1px 0 white;
+	-moz-border-radius: 3px 3px 0 0;
+	-khtml-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+
+		background-color: #f6f6f6;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-top: 1px solid #dfdfdf;
+	
+	height: 13px;
+}
+
+body.mp6 ul.metabox-tabs li.tab a {
+	background-color: #f5f5f5;
+	border-color: #dedede;
+	height: 14px;
+	line-height: 12px;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+body.admin-color-fresh ul.metabox-tabs li.tab a.active,
+body.admin-color-classic ul.metabox-tabs li.tab a.active,
+body.admin-color-fresh ul.metabox-tabs li.tab a:hover,
+body.admin-color-classic ul.metabox-tabs li.tab a:hover,
+body.mp6 ul.metabox-tabs li.tab a:hover {
+		background-color: #f6f6f6;
+	background-image: -ms-linear-gradient(top,#fefefe,#f6f6f6) !important;
+	background-image: -moz-linear-gradient(top,#fefefe,#f6f6f6) !important;
+	background-image: -o-linear-gradient(top,#fefefe,#f6f6f6) !important;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#fefefe),to(#f6f6f6)) !important;
+	background-image: -webkit-linear-gradient(top,#fefefe,#f6f6f6) !important;
+	background-image: linear-gradient(top,#fefefe,#f6f6f6) !important;
+	
+	height: 15px;
+
+}
+
+body.mp6 ul.metabox-tabs li.tab a.active,
+body.mp6 ul.metabox-tabs li.tab a:hover {
+	background-color: #fff;
+	border-color: #ddd;
+	height: 14px;
+	line-height: 12px;
+	border-radius: 0;
+}
+
+body.admin-color-fresh ul.metabox-tabs li.tab a.active,
+body.admin-color-classic ul.metabox-tabs li.tab a:hover,
+body.mp6 ul.metabox-tabs li.tab a:hover {
+	background: #f4f4f4;
+}
+
+body.admin-color-fresh #dashboard_hot ul.metabox-tabs,
+body.admin-color-classic #dashboard_hot ul.metabox-tabs,
+body.mp6 #dashboard_hot ul.metabox-tabs {
+	margin-top: -11px !important;
+	margin-bottom: 10px;
+}
+
+ul.metabox-tabs li.link {
+	margin-left: 4px;
+}
+#dashboard-widgets-wrap .metabox-tabs {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://s1.wp.com/wp-content/admin-plugins/blog-stats/blog-stats.css?20121217" /><link rel="stylesheet" type="text/css" href="/wp-content/js/select2/select2.css?2012-09-12" />
+<script type="text/javascript">
+/* <![CDATA[ */
+jQuery.ajaxSetup({cache:true});
+jQuery( function($) {
+	$( '#chartswitch li a' ).click( function() {
+		$( '#stat-chart-legend' ).html( '' );
+		$( '#stat-chart' ).html( '<img src="https://s2.wp.com/i/loading/loading-64.gif" style="margin-top: 70px;" />' );
+		if ( 'stat-human' != this.id )
+			$( '#stat-chart' ).load( 'https://evilshit.wordpress.com/wp-includes/charts/flot-stats-data.php', {"page":"stats","blog":35104158,"num":30,"unit":this.id.substring( 5 )} );
+		$( '#chartswitch a' ).removeClass( 'active' );
+		$( '#' + this.id ).addClass( 'active' );
+		this.blur();
+		return false;
+	});
+
+	// access toggle
+	$('#accesscontrol legend').each(function (i) {
+		$(this).click(function () {
+			$(this).parent().toggleClass('peekaboo').next().toggle();
+		});
+	});
+
+});
+/* ]]> */
+</script>
+<script type="text/javascript">
+// <!--
+jQuery(document).ready(function() {
+	// tab between them
+	jQuery('.metabox-tabs li.tab a').each(function(i) {
+		var thisTab = jQuery(this).parent().attr('class').replace(/tab /, '');
+		if ( 'active' != jQuery(this).attr('class') )
+			jQuery('div.' + thisTab).hide();
+
+		jQuery(this).click(function(){
+
+			// hide all child content
+			jQuery(this).parent().parent().parent().children('div').hide();
+
+			// remove all active tabs
+			jQuery(this).parent().parent('ul').find('li a.active').removeClass('active');
+
+			// show selected content
+			jQuery(this).parent().parent().parent().find('div.'+thisTab).show();
+			jQuery(this).parent().parent().parent().find('li.'+thisTab+' a').addClass('active');
+		});
+	});
+
+	// grouping
+	jQuery('.togglenext').each(function (i) {
+		jQuery(this).click(function () {
+			jQuery(this).toggleClass('peekaboo').next().toggle();
+		});
+	});
+});
+// -->
+</script>
+<script type='text/javascript'>
+	var syntaxHLcodes = 'sourcecode|source|code';
+</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<meta name="application-name" content="Linux M0nk3ys" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Just another linux blog" /><meta name="msapplication-task" content="name=Write a post;action-uri=https://evilshit.wordpress.com/wp-admin/post-new.php;icon-uri=https://s2.wp.com/i/icons/post.ico" /><meta name="msapplication-task" content="name=Moderate comments;action-uri=https://evilshit.wordpress.com/wp-admin/edit-comments.php?comment_status=moderated;icon-uri=https://s0.wp.com/i/icons/comment.ico" /><meta name="msapplication-task" content="name=Upload new media;action-uri=https://evilshit.wordpress.com/wp-admin/media-new.php;icon-uri=https://s2.wp.com/i/icons/media.ico" /><meta name="msapplication-task" content="name=Blog stats;action-uri=https://evilshit.wordpress.com/wp-admin/index.php?page=stats;icon-uri=https://s1.wp.com/i/icons/stats.ico" /><script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#999","focus":"#2ea2cc","current":"#fff"}};</script>
+
+<style type="text/css" media="screen">
+
+#toplevel_page_polls img, #toplevel_page_ratings img, #toplevel_page_feedback img{
+	display: none;
+}
+	
+.toplevel_page_feedback:hover div.wp-menu-image,
+.toplevel_page_feedback.wp-has-current-submenu div.wp-menu-image,
+.toplevel_page_feedback.current div.wp-menu-image {
+	background: url('/wp-content/admin-plugins/post-flair/polldaddy/img/grunion-menu-hover.png') no-repeat 7px 7px !important;
+	background-size: 15px 16px !important;
+}
+
+.toplevel_page_feedback div.wp-menu-image {
+	background: url('/wp-content/admin-plugins/post-flair/polldaddy/img/grunion-menu.png') no-repeat 7px 7px !important;
+	background-size: 15px 16px !important;
+}	
+
+#polldaddy-error.error{
+	border-radius:6px;
+	margin-left:5px;
+	margin-right:2%;
+	background-color:#FFC;
+	background:url('/wp-content/admin-plugins/post-flair/polldaddy/img/error-gray.png') no-repeat 3px 3px, -moz-linear-gradient(top, #FFF, #FFC);
+	background:url('/wp-content/admin-plugins/post-flair/polldaddy/img/error-gray.png') no-repeat 3px 3px, -webkit-linear-gradient(top, #FFF, #FFC);
+	margin-top:14px;
+	border:1px #cccccc solid;
+	padding:3px 5px 3px 40px;
+}
+
+
+h2#polldaddy-header, h2#poll-list-header{
+	padding-left:38px;
+	background:url('/wp-content/admin-plugins/post-flair/polldaddy/img/pd-wp-icon-gray-lrg.png') no-repeat 0 9px;
+	margin-bottom: 14px; 
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+
+	#adminmenu .menu-icon-feedback:hover div.wp-menu-image,
+	#adminmenu .menu-icon-feedback.wp-has-current-submenu div.wp-menu-image,
+	#adminmenu .menu-icon-feedback.current div.wp-menu-image {
+		background: url('/wp-content/admin-plugins/post-flair/polldaddy/img/grunion-menu-hover-2x.png') no-repeat 7px 7px !important;
+		background-size: 15px 16px !important;
+	}
+
+	#adminmenu .menu-icon-feedback div.wp-menu-image {
+		background: url('/wp-content/admin-plugins/post-flair/polldaddy/img/grunion-menu-2x.png') no-repeat 7px 7px !important;
+		background-size: 15px 16px !important;
+	}
+	
+	
+	h2#polldaddy-header, h2#poll-list-header{
+		background:url('/wp-content/admin-plugins/post-flair/polldaddy/img/pd-wp-icon-gray-lrg@2x.png') no-repeat 0 9px;
+		background-size: 31px 31px;
+	}
+}	
+
+	
+	
+</style><style type="text/css">
+	#settings-reading-relatedposts-customize { padding-left:2em; margin-top:.5em; }
+	#settings-reading-relatedposts .disabled { opacity:.5; filter:Alpha(opacity=50); }
+	#settings-reading-relatedposts-preview .jp-relatedposts { background:#fff; padding:.5em; width:75%; }
+</style>
+<script type="text/javascript">
+	jQuery( document ).ready( function($) {
+		var update_ui = function() {
+			if ( '1' == $( 'input[name="jetpack_relatedposts[enabled]"]:checked' ).val() ) {
+				$( '#settings-reading-relatedposts-customize' )
+					.removeClass( 'disabled' )
+					.find( 'input' )
+					.attr( 'disabled', false );
+				$( '#settings-reading-relatedposts-preview' )
+					.removeClass( 'disabled' );
+			} else {
+				$( '#settings-reading-relatedposts-customize' )
+					.addClass( 'disabled' )
+					.find( 'input' )
+					.attr( 'disabled', true );
+				$( '#settings-reading-relatedposts-preview' )
+					.addClass( 'disabled' );
+			}
+		};
+
+		var update_preview = function() {
+			var html = '';
+			if ( $( 'input[name="jetpack_relatedposts[show_headline]"]:checked' ).size() ) {
+				html += '<p class="jp-relatedposts-headline"><em>Related</em></p>';
+			}
+			if ( $( 'input[name="jetpack_relatedposts[show_thumbnails]"]:checked' ).size() ) {
+				html += '<p class="jp-relatedposts-post jp-relatedposts-post0" data-post-format="false"><img width="48" src="http://en.blog.files.wordpress.com/2012/08/1-wpios-ipad-3-1-viewsite.png?w=48&amp;h=48&amp;crop=1" alt="Big iPhone/iPad Update Now&nbsp;Available" scale="0"><strong><a href="#" rel="nofollow">Big iPhone/iPad Update Now Available</a></strong><br><span>In "Mobile"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-format="false"><img width="48" src="http://en.blog.files.wordpress.com/2013/04/wordpress-com-news-wordpress-for-android-ui-update2.jpg?w=48&amp;h=48&amp;crop=1" alt="The WordPress for Android App Gets a Big&nbsp;Facelift" scale="0"><strong><a href="#" rel="nofollow">The WordPress for Android App Gets a Big Facelift</a></strong><br><span>In "Mobile"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-format="false"><img width="48" src="http://en.blog.files.wordpress.com/2013/01/videopresswedding.jpg?w=48&amp;h=48&amp;crop=1" alt="Upgrade Focus: VideoPress For&nbsp;Weddings" scale="0"><strong><a href="#" rel="nofollow">Upgrade Focus: VideoPress For Weddings</a></strong><br><span>In "Upgrade"</span></p>';
+			} else {
+				html += '<p class="jp-relatedposts-post jp-relatedposts-post0" data-post-format="false"><strong><a href="#" rel="nofollow">Big iPhone/iPad Update Now Available</a></strong><br><span>In "Mobile"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-format="false"><strong><a href="#" rel="nofollow">The WordPress for Android App Gets a Big Facelift</a></strong><br><span>In "Mobile"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-format="false"><strong><a href="#" rel="nofollow">Upgrade Focus: VideoPress For Weddings</a></strong><br><span>In "Upgrade"</span></p>';
+			}
+			$( '#settings-reading-relatedposts-preview .jp-relatedposts' )
+				.html( html )
+				.show();
+		};
+
+		// Update on load
+		update_preview();
+		update_ui();
+
+		// Update on change
+		$( '#settings-reading-relatedposts-customize input' )
+			.change( update_preview );
+		$( '#settings-reading-relatedposts' )
+			.find( 'input.tog' )
+			.change( update_ui );
+	});
+</script>	<style type="text/css">
+		#wp-content-editor-tools {
+			height: auto;
+		}
+				.wp-editor-container {
+			clear: both;
+		}
+			</style>
+<style id="syntaxhighlighteranchor"></style>
+</head>
+<body class="wp-admin wp-core-ui no-js  mp6  admin-color-mp6 legacy-color-fresh dashboard_page_stats auto-fold admin-bar branch-3-9 version-3-9 admin-color-fresh locale-en multisite no-customize-support no-svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+<a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-top-first menu-icon-dashboard" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-top-first menu-icon-dashboard" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Dashboard</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Dashboard</li><li class="wp-first-item"><a href='index.php' class="wp-first-item">Home</a></li><li><a href='index.php?page=my-comments'>Comments I&#8217;ve Made</a></li><li class="current"><a href='index.php?page=stats' class="current">Site Stats</a></li><li><a href='index.php?page=akismet-stats-display'>Akismet Stats</a></li><li><a href='index.php?page=my-blogs'>My Blogs</a></li><li><a href='index.php?page=subscriptions'>Blogs I Follow</a></li><li><a href='index.php?page=omnisearch'>Omnisearch</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-store menu-top-last" id="menu-upgrades">
+	<a href='paid-upgrades.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-store menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Store</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Store</li><li class="wp-first-item"><a href='paid-upgrades.php' class="wp-first-item">Store</a></li><li><a href='themes.php?order=premium&ref=menu'>Premium Themes</a></li><li><a href='paid-upgrades.php?page=domains'>Domains</a></li><li><a href='paid-upgrades.php?page=my-upgrades'>My Upgrades</a></li><li><a href='paid-upgrades.php?page=billing-history'>Billing History</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<a href='edit.php' class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Posts</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Posts</li><li class="wp-first-item"><a href='edit.php' class="wp-first-item">All Posts</a></li><li><a href='post-new.php'>Add New</a></li><li><a href='edit-tags.php?taxonomy=category'>Categories</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li><li><a href='post-new.php?cap#cap'>Copy a Post</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Media</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Media</li><li class="wp-first-item"><a href='upload.php' class="wp-first-item">Library</a></li><li><a href='media-new.php'>Add New</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" id="menu-links">
+	<a href='link-manager.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Links</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Links</li><li class="wp-first-item"><a href='link-manager.php' class="wp-first-item">All Links</a></li><li><a href='link-add.php'>Add New</a></li><li><a href='edit-tags.php?taxonomy=link_category'>Link Categories</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Pages</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Pages</li><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">All Pages</a></li><li><a href='post-new.php?post_type=page'>Add New</a></li><li><a href='post-new.php?post_type=page&cap#cap'>Copy a Page</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Comments <span class='awaiting-mod count-0'><span class='pending-count'>0</span></span></div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_feedback menu-top-last" id="toplevel_page_feedback"><a href='admin.php?page=polls' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_feedback menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><img src="/wp-content/admin-plugins/post-flair/polldaddy/img/pd-wp-icon-gray.png" alt="" /></div><div class='wp-menu-name'>Feedback</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Feedback</li><li class="wp-first-item"><a href='admin.php?page=polls' class="wp-first-item">Polls</a></li><li><a href='admin.php?page=ratings'>Ratings</a></li><li><a href='edit.php?post_type=feedback'>Feedback</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Appearance</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Appearance</li><li class="wp-first-item"><a href='themes.php' class="wp-first-item">Themes</a></li><li><a href='customize.php?url=https%3A%2F%2Fevilshit.wordpress.com%2Fwp-admin%2F%3Fpage%3Dstats&src=dashboard'>Customize</a></li><li><a href='widgets.php'>Widgets</a></li><li><a href='nav-menus.php'>Menus</a></li><li><a href='themes.php?page=theme_options'>Theme Options</a></li><li><a href='themes.php?page=custom-header'>Header</a></li><li><a href='themes.php?page=custom-background'>Background</a></li><li><a href='themes.php?page=custom-design'>Custom Design</a></li><li><a href='themes.php?page=mobile-options'>Mobile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Users</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Users</li><li class="wp-first-item"><a href='users.php' class="wp-first-item">All Users</a></li><li><a href='users.php?page=wpcom-invite-users'>Invite New</a></li><li><a href='users.php?page=grofiles-editor'>My Profile</a></li><li><a href='users.php?page=grofiles-user-settings'>Personal Settings</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Tools</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Tools</li><li class="wp-first-item"><a href='tools.php' class="wp-first-item">Available Tools</a></li><li><a href='import.php'>Import</a></li><li><a href='tools.php?page=delete-blog'>Delete Site</a></li><li><a href='tools.php?page=export-choices'>Export</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Settings</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Settings</li><li class="wp-first-item"><a href='options-general.php' class="wp-first-item">General</a></li><li><a href='options-writing.php'>Writing</a></li><li><a href='options-reading.php'>Reading</a></li><li><a href='options-discussion.php'>Discussion</a></li><li><a href='options-media.php'>Media</a></li><li><a href='options-general.php?page=sharing'>Sharing</a></li><li><a href='options-general.php?page=polls&#038;action=options'>Polls</a></li><li><a href='options-general.php?page=ratings&#038;action=options'>Ratings</a></li><li><a href='options-general.php?page=adcontrol'>AdControl</a></li><li><a href='options-general.php?page=email_post_changes'>Email Post Changes</a></li><li><a href='options-general.php?page=openidserver'>OpenID</a></li><li><a href='options-general.php?page=webhooks'>Webhooks</a></li></ul></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">
+
+
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="Main content" tabindex="0">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden no-sidebar" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-wpcom-feedback" class="active">
+								<a href="#tab-panel-wpcom-feedback" aria-controls="tab-panel-wpcom-feedback">
+									Get Help								</a>
+							</li>
+												</ul>
+					</div>
+
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-wpcom-feedback" class="help-tab-content active">
+								<div id="quicklookup"><p>Choose a Category:</p><ul class="supportcats"><li><a onclick="fbshow('appearance')">Appearance</a></li>
+<li><a onclick="fbshow('comments')">Comments</a></li>
+<li><a onclick="fbshow('configuration')">Configuration</a></li>
+<li><a onclick="fbshow('general')">General</a></li>
+<li><a onclick="fbshow('languages')">Languages</a></li>
+<li><a onclick="fbshow('links')">Links</a></li>
+<li><a onclick="fbshow('media')">Media</a></li>
+<li><a onclick="fbshow('following')">Following</a></li>
+<li><a onclick="fbshow('tools')">Tools</a></li>
+<li><a onclick="fbshow('policies-safety')">Policies &amp; Safety</a></li>
+<li><a onclick="fbshow('traffic')">Traffic</a></li>
+<li><a onclick="fbshow('upgrades')">Upgrades</a></li>
+<li><a onclick="fbshow('users')">Users</a></li>
+<li><a onclick="fbshow('widgets-sidebars')">Widgets &amp; Sidebars</a></li>
+<li><a onclick="fbshow('writing-editing')">Writing &amp; Editing</a></li>
+</ul><br class="clear" /><p><a href="http://learn.wordpress.com/">Check out <em>Learn WordPress</em>, chock full of tutorials and walkthroughs to make you a WordPress pro and impress your friends</a>.</p></div>							</div>
+											</div>
+				</div>
+			</div>
+				<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="Screen Options Tab">
+		<form id="adv-settings" action="" method="post">
+					<h5>Show on screen</h5>
+					<div class="metabox-prefs">
+				<label for="referrers-hide"><input class="hide-postbox-tog" name="referrers-hide" type="checkbox" id="referrers-hide" value="referrers" checked="checked" />Referrers</label>
+<label for="searchterms-hide"><input class="hide-postbox-tog" name="searchterms-hide" type="checkbox" id="searchterms-hide" value="searchterms" checked="checked" />Search Engine Terms</label>
+<label for="general-hide"><input class="hide-postbox-tog" name="general-hide" type="checkbox" id="general-hide" value="general" checked="checked" />Totals, Followers & Shares</label>
+<label for="authorviews-hide"><input class="hide-postbox-tog" name="authorviews-hide" type="checkbox" id="authorviews-hide" value="authorviews" checked="checked" />Top Authors</label>
+<label for="postviews-hide"><input class="hide-postbox-tog" name="postviews-hide" type="checkbox" id="postviews-hide" value="postviews" checked="checked" />Top Posts & Pages</label>
+<label for="clicks-hide"><input class="hide-postbox-tog" name="clicks-hide" type="checkbox" id="clicks-hide" value="clicks" checked="checked" />Clicks</label>
+<label for="stats-comments-hide"><input class="hide-postbox-tog" name="stats-comments-hide" type="checkbox" id="stats-comments-hide" value="stats-comments" checked="checked" />Comments</label>
+				<br class="clear" />
+			</div>
+					<div><input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="47be855eeb" /></div>
+		</form>
+		</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="#contextual-help-wrap" id="contextual-help-link" class="show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Help</a>
+			</div>
+					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="#screen-options-wrap" id="show-settings-link" class="show-settings" aria-controls="screen-options-wrap" aria-expanded="false">Screen Options</a>
+			</div>
+				</div>
+		<div class="updated tip-google-plus" id="wpcom-tip"><p>Tip: Connect to Google+: Increase your readers' engagement with your content by <a href="/wp-admin/options-general.php?page=sharing#gplus">connecting your Google+ profile</a> and <a href="/wp-admin/options-general.php?page=sharing">enable publicize for Google+</a> to share your posts to Google+.<a href="javascript:hide_ad_tip('google-plus')" class="noticon noticon-close"></a>	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		hide_ad_tip = function( tip_name ) {
+			$.ajax({
+				url:ajaxurl,
+				data:{
+					action:'hide_ad_tip',
+					tip:tip_name,
+					nonce:'7ec35e4c30'
+				}});
+			$('#wpcom-tip').hide();
+		}
+	});
+	</script>
+	</p></div>
+<div id="security-nag" class="error"><p>Please visit your <a href="https://wordpress.com/settings/security/">settings</a> page and make sure you have enabled <a href="http://en.support.wordpress.com/security/two-step-authentication/">two step authentication</a>. This makes your account more secure by requiring access to your phone for login and can <strong>help you regain access to your account</strong> using your phone in case you forget your password.<div class="dismiss"><a href="javascript:hide_security_nag()" class="noticon noticon-close"></a></div></p></div>			<style type="text/css">
+				#security-nag {
+					position: relative;
+				}
+				#security-nag div.dismiss{
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+				#security-nag div.dismiss .noticon {
+					width: auto;
+					height: auto;
+				}
+				#security-nag .noticon-close {
+					text-decoration: none;
+					margin: 5px 5px 5px 29px;
+				}
+			</style>
+						<script type="text/javascript">
+				jQuery( document ).ready( function( $ ) {
+					hide_security_nag = function() {
+						$.ajax( {
+							url: ajaxurl,
+							data: {
+								action: 'hide_security_nag',
+								nonce: '75174fa82e',
+								user_id: 34974800							}
+						} );
+						$( '#security-nag' ).fadeOut( 'fast' );
+					}
+				} );
+			</script>
+		<div class="wrap">
+<div class="header">
+<div class="selector">
+<div id="stats-blog">
+</div>
+<script>
+jQuery(document).ready( function($) {
+	function select2BlogStatFormat( blog ) {
+		var formatted = blog.text.replace( /([^(]+)/, '<b>$1</b>' );
+		return formatted;
+	}
+	var statsblog_switcher = jQuery( '#statsblog' );
+	if ( typeof statsblog_switcher.select2 == 'function' ) {
+		statsblog_switcher.select2( {
+			formatResult: select2BlogStatFormat,
+			formatSelection: select2BlogStatFormat
+		} );
+	}
+	statsblog_switcher.bind("change", function () {
+		document.location = "index.php?page=stats&amp;blog=35104158" +
+			'&blog=' + jQuery( 'select#statsblog option:selected').val();
+	} );
+} );
+</script>
+</div>
+
+<div id="icon-stats" class="icon32"><br /></div>
+<h2>December 18, 2013, 01:09</h2>
+</div>
+
+
+
+	<div class="gotonewdash">
+		<p>
+			<strong>Did you know you can view enhanced stats on WordPress.com?</strong>
+				<a class="button-secondary" style="margin-left: 5px" href="https://wordpress.com/my-stats/">Show Me</a>
+		</p>
+	</div>
+<div id="statchart" data-blog_id=35104158>
+<div id="statchart-box">
+	<ul id="chartswitch">
+				<li><a id="stat-1"  class='active' href="index.php?page=stats&amp;blog=35104158&amp;unit=1">Days</a></li>
+				<li><a id="stat-7" href="index.php?page=stats&amp;blog=35104158&amp;unit=7">Weeks</a></li>
+				<li><a id="stat-31" href="index.php?page=stats&amp;blog=35104158&amp;unit=31">Months</a></li>
+			</ul>
+
+	<div id="statchart-topright">
+			<div class="summarytables"><a href="index.php?page=stats&amp;view=table&amp;blog=35104158">Summaries</a></div>
+	</div>
+
+<div id='stat-chart-container' class='stat-chart'>		<script type="text/javascript">jQuery.ajaxSetup({cache:true});</script>
+<!--[if lt IE 9]><script type="text/javascript" src="https://s2.wp.com/wp-includes/charts/flot/excanvas.min.js?ver=20120730"></script><![endif]-->
+<script type="text/javascript" src="https://s2.wp.com/wp-includes/charts/flot/jquery.flot.js"></script><script type='text/javascript' src='https://s0.wp.com/wp-includes/charts/flot/jquery.flot.selection.js'></script><script type='text/javascript' src='https://s1.wp.com/wp-includes/charts/flot/jquery.flot.retina.js'></script>
+<style type="text/css">
+#tooltip {
+	position: absolute;
+	display: none;
+	color: #666;
+	background: #fff;
+	border: 1px solid #aaaaaa;
+	padding: 3px 5px;
+	-moz-box-shadow: 0px 1px 1px #d0d0d0;
+	-webkit-box-shadow: 0px 1px 1px #d0d0d0;
+	box-shadow: 0px 1px 1px #d0d0d0;
+}
+#tooltip p {
+	margin: 0;
+	font-size: 11px;
+	position: relative;
+	z-index: 12;
+	max-width:250px;
+}
+
+#tooltip strong {
+	font-weight: normal;
+	color: #101010;
+}
+#tooltip .arrowlefttop, #tooltip .arrowleftbottom, #tooltip .arrowrighttop, #tooltip .arrowrightbottom {
+	display: block;
+	*display: none;
+	height: 7px;
+	position: relative;
+}
+#tooltip .arrowlefttop {
+	background: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-left.png") no-repeat left top;
+	left: -12px;
+	top: 1px;
+	margin-bottom: -7px;
+}
+#tooltip .arrowleftbottom {
+	background: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-left.png") no-repeat left bottom;
+	left: -12px;
+	margin-top: -7px;
+}
+#tooltip .arrowrighttop {
+	background: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-right.png") no-repeat right top;
+	right: -12px;
+	top: 1px;
+	margin-bottom: -7px;
+}
+#tooltip .arrowrightbottom {
+	background: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-right.png") no-repeat right bottom;
+	right: -12px;
+	margin-top: -7px;
+}
+
+td.legendLabel {
+	text-align:left;
+}
+
+.stat-legend-table {
+	padding: 2.5ex 0 2ex 50px;
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	.stat-chart img.wpcom-loading-64 { width: 32px; height: 32px; }
+	#tooltip .arrowlefttop, #tooltip .arrowleftbottom {
+		background-image: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-left-2x.png") !important;
+		background-size: 7px 7px;
+	}
+	#tooltip .arrowrighttop, #tooltip .arrowrightbottom {
+		background-image: url("https://s0.wp.com/i/stats/stats-tooltip-arrow-right-2x.png") !important;
+		background-size: 7px 7px;
+	}
+}
+</style>
+<div id='stat-chart' class='stat-chart' style='background:#fff;text-align:center;direction:ltr;height:210px;'><img class='wpcom-loading-64' src='https://s2.wp.com/i/loading/loading-64.gif' style='margin-top: 70px;' /></div>
+<script type="text/javascript">
+// <![CDATA[
+jQuery( function($) {
+		$( '#stat-chart' ).load( 'https://evilshit.wordpress.com/wp-includes/charts/flot-stats-data.php', {"height":210,"page":"stats","chart_type":"stats-data","target":"stat-chart","enable_zoom":"false","num":30,"blog":35104158,"unit":1,"newdash":false,"wpadminstats":1} )
+} );
+// ]]>
+</script></div>	<div id="stats-nuggets">
+		<ul>
+			<li><h3>Today</h3><a href="index.php?page=stats&amp;blog=35104158&amp;day=2013-12-18"><span>14</span> views</a></li><li id="bestever"><h3>Best ever</h3><a href="index.php?page=stats&amp;blog=35104158&amp;day=2013-12-09" title="December 9, 2013"><span>301</span> <em>views</em></a></li><li><h3>All time</h3><strong><span>45,521</span> <em>views</em></strong><strong><span>49</span> <em>comments</em></strong></li>		</ul>
+	</div>
+
+</div>
+</div>
+
+<div id="wpcom-stats-meta-box-container" class="metabox-holder">
+<input type="hidden" id="closedpostboxesnonce" name="closedpostboxesnonce" value="c3fcc093d8" /><input type="hidden" id="meta-box-order-nonce" name="meta-box-order-nonce" value="11d8be4fa0" /><script type="text/javascript">
+jQuery(document).ready( function($) {
+	jQuery('.if-js-closed').removeClass('if-js-closed').addClass('closed');
+	if(typeof postboxes !== 'undefined')
+		postboxes.add_postbox_toggles( 'dashboard_page_stats' );
+});
+</script>
+	<div class='postbox-container' style='width:49%;'>
+<div id="normal-sortables" class="meta-box-sortables"><div id="authorviews" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Top Authors</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab today"><a class="active" href="javascript:void(null);">Today</a></li><li class="tab yesterday"><a href="javascript:void(null);">Yesterday</a></li><li class="link"><a href="index.php?page=stats&amp;view=authorviews&amp;summarize&amp;numdays=7&amp;blog=35104158">Summaries</a></li>	</ul>
+		<div class="today">
+				<table class="statsDay" cellspacing="0">
+		<tr><th class="label">Author</th><th class="stats-follow"></th><th class="views">Views</th></tr>
+					<tr class="togglenext alternate">
+			<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/30cd7452025d045bf63cf7eab9be11c9?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">Drunk3nm0nk3y</span></td><td class="stats-follow"></td><td class="views">9</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr><td class="label"><span class='post-1552-link'><a href="http://evilshit.wordpress.com/2013/10/17/how-to-install-clockworkmod-recovery-and-cyanogenmod-on-samsung-galaxy-s3/" target='_blank'>How to install ClockworkMod Recovery and CyanogenMod on Samsung Galaxy S3</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-380-link'><a href="http://evilshit.wordpress.com/2012/09/15/how-to-make-networkmanager-and-network-manager-applet-work-on-arch-linux-with-gnome3/" target='_blank'>How to install and configure NetworkManager and network-manager-applet on Arch Linux with Gnome3</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr><td class="label"><span class='post-421-link'><a href="http://evilshit.wordpress.com/2012/09/23/how-to-install-and-configure-hp-printers-scanners-on-arch-linux/" target='_blank'>How to install and configure HP printers / scanners on Archlinux</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-903-link'><a href="http://evilshit.wordpress.com/2013/03/24/how-to-receive-files-via-bluetooth-on-gnome3/" target='_blank'>How to receive files via Bluetooth on Gnome3</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr><td class="label"><span class='post-730-link'><a href="http://evilshit.wordpress.com/2012/12/03/how-migrate-from-initscripts-to-systemd-on-archlinux/" target='_blank'>How to migrate from initscripts to systemd on Archlinux</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+						<tr class="togglenext">
+			<td class="label-avatar"><img alt='' src='https://1.gravatar.com/avatar/4259220f735855f6fe0dd93bfeff45a0?s=32&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">h0nk3ym0nk3y</span></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">3</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr class="alternate"><td class="label"><span class='post-199-link'><a href="http://evilshit.wordpress.com/2012/08/09/how-to-remove-overscan-on-hdmi-1080p-output/" target='_blank'>How to remove overscan on HDMI 1080p output using xrandr</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr><td class="label"><span class='post-383-link'><a href="http://evilshit.wordpress.com/2012/09/13/how-to-combine-multiple-files-with-ffmpeg/" target='_blank'>How to combine multiple files with FFmpeg</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+						<tr class="togglenext alternate">
+			<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/62cba743e37a7ff00da9ca7a40ae6ecd?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">funkym0nk3y</span></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">2</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr><td class="label"><span class='post-133-link'><a href="http://evilshit.wordpress.com/2012/06/28/how-to-encrypt-a-string-with-rot13-one-liner/" target='_blank'>How to encrypt a string with ROT13 (one liner)</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-681-link'><a href="http://evilshit.wordpress.com/2012/10/29/how-to-mount-luks-encrypted-partitions-manually/" target='_blank'>How to mount LUKS encrypted partitions manually</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+					</table>
+		</div>
+				<div class="yesterday"style='display:none'>
+				<table class="statsDay" cellspacing="0">
+		<tr><th class="label">Author</th><th class="stats-follow"></th><th class="views">Views</th></tr>
+					<tr class="togglenext alternate">
+			<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/30cd7452025d045bf63cf7eab9be11c9?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">Drunk3nm0nk3y</span></td><td class="stats-follow"></td><td class="views">158</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr><td class="label"><span class='post-1552-link'><a href="http://evilshit.wordpress.com/2013/10/17/how-to-install-clockworkmod-recovery-and-cyanogenmod-on-samsung-galaxy-s3/" target='_blank'>How to install ClockworkMod Recovery and CyanogenMod on Samsung Galaxy S3</a></span></td><td class="stats-follow"></td><td class="views">112</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-380-link'><a href="http://evilshit.wordpress.com/2012/09/15/how-to-make-networkmanager-and-network-manager-applet-work-on-arch-linux-with-gnome3/" target='_blank'>How to install and configure NetworkManager and network-manager-applet on Arch Linux with Gnome3</a></span></td><td class="stats-follow"></td><td class="views">19</td></tr>
+								<tr><td class="label"><span class='post-421-link'><a href="http://evilshit.wordpress.com/2012/09/23/how-to-install-and-configure-hp-printers-scanners-on-arch-linux/" target='_blank'>How to install and configure HP printers / scanners on Archlinux</a></span></td><td class="stats-follow"></td><td class="views">8</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-903-link'><a href="http://evilshit.wordpress.com/2013/03/24/how-to-receive-files-via-bluetooth-on-gnome3/" target='_blank'>How to receive files via Bluetooth on Gnome3</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr><td class="label"><span class='post-1366-link'><a href="http://evilshit.wordpress.com/2013/10/14/how-to-install-bumblebee-on-arch-linux/" target='_blank'>How to install Bumblebee on Arch Linux</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-555-link'><a href="http://evilshit.wordpress.com/2012/09/30/how-to-fix-the-mime-type-of-pdf-attachments-in-thunderbird-e-mails/" target='_blank'>How to fix the MIME-Type of PDF attachments in Thunderbird E-Mails</a></span></td><td class="stats-follow"></td><td class="views">3</td></tr>
+								<tr><td class="label"><span class='post-81-link'><a href="http://evilshit.wordpress.com/2012/04/22/play-flash-videos-with-the-mediaplayer-of-your-choice/" target='_blank'>How to play flash videos with the media player of your choice</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-919-link'><a href="http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualization-tool-for-your-desktop/" target='_blank'>ConkyPress a WordPress stats visualization tool for your desktop</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr><td class="label"><span class='post-730-link'><a href="http://evilshit.wordpress.com/2012/12/03/how-migrate-from-initscripts-to-systemd-on-archlinux/" target='_blank'>How to migrate from initscripts to systemd on Archlinux</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-128-link'><a href="http://evilshit.wordpress.com/2012/08/25/how-to-change-the-java-versionenviroment-in-ubuntu/" target='_blank'>How to change the Java version/enviroment in Ubuntu</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+						<tr class="togglenext">
+			<td class="label-avatar"><img alt='' src='https://1.gravatar.com/avatar/4259220f735855f6fe0dd93bfeff45a0?s=32&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">h0nk3ym0nk3y</span></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">49</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr class="alternate"><td class="label"><span class='post-822-link'><a href="http://evilshit.wordpress.com/2013/08/10/how-to-stream-multiple-tv-channels-with-a-single-dvb-t-tuner-using-vlc/" target='_blank'>How to stream multiple TV channels with a single DVB-T tuner using VLC</a></span></td><td class="stats-follow"></td><td class="views">19</td></tr>
+								<tr><td class="label"><span class='post-383-link'><a href="http://evilshit.wordpress.com/2012/09/13/how-to-combine-multiple-files-with-ffmpeg/" target='_blank'>How to combine multiple files with FFmpeg</a></span></td><td class="stats-follow"></td><td class="views">8</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-199-link'><a href="http://evilshit.wordpress.com/2012/08/09/how-to-remove-overscan-on-hdmi-1080p-output/" target='_blank'>How to remove overscan on HDMI 1080p output using xrandr</a></span></td><td class="stats-follow"></td><td class="views">6</td></tr>
+								<tr><td class="label"><span class='post-165-link'><a href="http://evilshit.wordpress.com/2012/06/29/how-to-install-ubuntu-server-on-a-usb-3-0-stick-and-boot-that-stick/" target='_blank'>How to install Ubuntu Server on a USB 3.0 stick and boot that stick</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-407-link'><a href="http://evilshit.wordpress.com/2012/09/27/how-to-split-and-demux-a-file-with-ffmpeg/" target='_blank'>How to split and demux a file with FFmpeg</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr><td class="label"><span class='post-1676-link'><a href="http://evilshit.wordpress.com/2013/10/30/how-to-extract-video-urls-from-youtube/" target='_blank'>How to extract video URLs from YouTube</a></span></td><td class="stats-follow"></td><td class="views">3</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-655-link'><a href="http://evilshit.wordpress.com/2012/10/22/how-to-mount-a-luks-encrypted-partition-on-boot/" target='_blank'>How to mount a LUKS encrypted partition on boot</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr><td class="label"><span class='post-369-link'><a href="http://evilshit.wordpress.com/2012/10/03/how-to-transcode-a-directory-of-audio-files-to-aac-with-ffmpeg/" target='_blank'>How to transcode a directory of audio files to AAC with FFmpeg</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+						<tr class="togglenext alternate">
+			<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/62cba743e37a7ff00da9ca7a40ae6ecd?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="toggler">funkym0nk3y</span></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">32</td>
+			</tr>
+			<tr class="table" style="display:none"><td colspan="3">
+			<table>
+							<tr><td class="label"><span class='post-681-link'><a href="http://evilshit.wordpress.com/2012/10/29/how-to-mount-luks-encrypted-partitions-manually/" target='_blank'>How to mount LUKS encrypted partitions manually</a></span></td><td class="stats-follow"></td><td class="views">10</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-1702-link'><a href="http://evilshit.wordpress.com/2013/11/19/how-to-install-a-caldav-and-carddav-server-using-radicale/" target='_blank'>How to install a CalDav and CardDav server using Radicale</a></span></td><td class="stats-follow"></td><td class="views">9</td></tr>
+								<tr><td class="label"><span class='post-570-link'><a href="http://evilshit.wordpress.com/2013/06/19/how-to-create-your-own-pki-with-openssl/" target='_blank'>How to create your own PKI with openssl</a></span></td><td class="stats-follow"></td><td class="views">5</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-1135-link'><a href="http://evilshit.wordpress.com/2013/05/28/how-to-make-daily-backups-with-rsync-and-cronjobs/" target='_blank'>How to make daily backups with rsync and cronjobs</a></span></td><td class="stats-follow"></td><td class="views">3</td></tr>
+								<tr><td class="label"><span class='post-14-link'><a href="http://evilshit.wordpress.com/2012/04/18/how-to-encrypt-and-decrypt-a-file-with-openssl/" target='_blank'>How to encrypt and decrypt a file with openssl</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-1237-link'><a href="http://evilshit.wordpress.com/2013/12/17/how-to-set-up-a-stateful-firewall-with-iptables/" target='_blank'>How to set up a stateful firewall with iptables</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr><td class="label"><span class='post-586-link'><a href="http://evilshit.wordpress.com/2012/10/05/how-to-disable-the-monitor-sleep-modus/" target='_blank'>How to disable the monitor sleep mode</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate"><td class="label"><span class='post-184-link'><a href="http://evilshit.wordpress.com/2012/07/09/how-to-generate-a-random-password-using-command-line-tools/" target='_blank'>How to generate a random password using command-line tools</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr><td class="label"><span class='post-288-link'><a href="http://evilshit.wordpress.com/2012/09/01/how-to-set-up-a-honeypot-with-artillery/" target='_blank'>How to set up a honeypot with artillery</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							</table>
+			</td></tr>
+					</table>
+		</div>
+		</div>
+</div>
+<div id="postviews" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Top Posts & Pages</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab today"><a class="active" href="javascript:void(null);">Today</a></li><li class="tab yesterday"><a href="javascript:void(null);">Yesterday</a></li><li class="link"><a href="index.php?page=stats&amp;view=postviews&amp;summarize&amp;numdays=7&amp;blog=35104158">Summaries</a></li>	</ul>
+		<div class="today">
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th class="label">Title</th><th class="more"></th><th class="views">Views</th></tr>
+					<tr class="alternate"><td class="label"><span class='post-1552-link'><a href='http://evilshit.wordpress.com/2013/10/17/how-to-install-clockworkmod-recovery-and-cyanogenmod-on-samsung-galaxy-s3/' target='_blank'>How to install ClockworkMod Recovery and CyanogenMod on Samsung Galaxy&nbsp;S3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=1552&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">5</td></tr>
+						<tr><td class="label"><span class='post-199-link'><a href='http://evilshit.wordpress.com/2012/08/09/how-to-remove-overscan-on-hdmi-1080p-output/' target='_blank'>How to remove overscan on HDMI 1080p output using&nbsp;xrandr</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=199&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">2</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-380-link'><a href='http://evilshit.wordpress.com/2012/09/15/how-to-make-networkmanager-and-network-manager-applet-work-on-arch-linux-with-gnome3/' target='_blank'>How to install and configure NetworkManager and network-manager-applet on Arch Linux with&nbsp;Gnome3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=380&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr><td class="label"><span class='post-421-link'><a href='http://evilshit.wordpress.com/2012/09/23/how-to-install-and-configure-hp-printers-scanners-on-arch-linux/' target='_blank'>How to install and configure HP printers / scanners on&nbsp;Archlinux</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=421&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-133-link'><a href='http://evilshit.wordpress.com/2012/06/28/how-to-encrypt-a-string-with-rot13-one-liner/' target='_blank'>How to encrypt a string with ROT13 (one&nbsp;liner)</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=133&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr><td class="label"><span class='post-681-link'><a href='http://evilshit.wordpress.com/2012/10/29/how-to-mount-luks-encrypted-partitions-manually/' target='_blank'>How to mount LUKS encrypted partitions&nbsp;manually</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=681&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-903-link'><a href='http://evilshit.wordpress.com/2013/03/24/how-to-receive-files-via-bluetooth-on-gnome3/' target='_blank'>How to receive files via Bluetooth on&nbsp;Gnome3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=903&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr><td class="label"><span class='post-730-link'><a href='http://evilshit.wordpress.com/2012/12/03/how-migrate-from-initscripts-to-systemd-on-archlinux/' target='_blank'>How to migrate from initscripts to systemd on&nbsp;Archlinux</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=730&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-383-link'><a href='http://evilshit.wordpress.com/2012/09/13/how-to-combine-multiple-files-with-ffmpeg/' target='_blank'>How to combine multiple files with&nbsp;FFmpeg</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=383&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">1</td></tr>
+						<tr class="total"><td class="label"><strong>Total views of posts on your blog</strong></td><td class="more"></td><td class="views"><strong>14</strong></td></tr>
+					</table>
+				</div>
+				<div class="yesterday"style='display:none'>
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th class="label">Title</th><th class="more"></th><th class="views">Views</th></tr>
+					<tr class="alternate"><td class="label"><span class='post-1552-link'><a href='http://evilshit.wordpress.com/2013/10/17/how-to-install-clockworkmod-recovery-and-cyanogenmod-on-samsung-galaxy-s3/' target='_blank'>How to install ClockworkMod Recovery and CyanogenMod on Samsung Galaxy&nbsp;S3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=1552&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">112</td></tr>
+						<tr><td class="label"><span class='post-380-link'><a href='http://evilshit.wordpress.com/2012/09/15/how-to-make-networkmanager-and-network-manager-applet-work-on-arch-linux-with-gnome3/' target='_blank'>How to install and configure NetworkManager and network-manager-applet on Arch Linux with&nbsp;Gnome3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=380&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">19</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-822-link'><a href='http://evilshit.wordpress.com/2013/08/10/how-to-stream-multiple-tv-channels-with-a-single-dvb-t-tuner-using-vlc/' target='_blank'>How to stream multiple TV channels with a single DVB-T tuner using&nbsp;VLC</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=822&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">19</td></tr>
+						<tr><td class="label"><span class='post-681-link'><a href='http://evilshit.wordpress.com/2012/10/29/how-to-mount-luks-encrypted-partitions-manually/' target='_blank'>How to mount LUKS encrypted partitions&nbsp;manually</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=681&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">10</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-1702-link'><a href='http://evilshit.wordpress.com/2013/11/19/how-to-install-a-caldav-and-carddav-server-using-radicale/' target='_blank'>How to install a CalDav and CardDav server using&nbsp;Radicale</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=1702&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">9</td></tr>
+						<tr><td class="label"><span class='post-383-link'><a href='http://evilshit.wordpress.com/2012/09/13/how-to-combine-multiple-files-with-ffmpeg/' target='_blank'>How to combine multiple files with&nbsp;FFmpeg</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=383&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">8</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-421-link'><a href='http://evilshit.wordpress.com/2012/09/23/how-to-install-and-configure-hp-printers-scanners-on-arch-linux/' target='_blank'>How to install and configure HP printers / scanners on&nbsp;Archlinux</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=421&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">8</td></tr>
+						<tr><td class="label"><span class='post-199-link'><a href='http://evilshit.wordpress.com/2012/08/09/how-to-remove-overscan-on-hdmi-1080p-output/' target='_blank'>How to remove overscan on HDMI 1080p output using&nbsp;xrandr</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=199&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">6</td></tr>
+						<tr class="alternate"><td class="label"><span class='post-165-link'><a href='http://evilshit.wordpress.com/2012/06/29/how-to-install-ubuntu-server-on-a-usb-3-0-stick-and-boot-that-stick/' target='_blank'>How to install Ubuntu Server on a USB 3.0 stick and boot that&nbsp;stick</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=165&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">5</td></tr>
+						<tr><td class="label"><span class='post-903-link'><a href='http://evilshit.wordpress.com/2013/03/24/how-to-receive-files-via-bluetooth-on-gnome3/' target='_blank'>How to receive files via Bluetooth on&nbsp;Gnome3</a></span></td>
+			<td class="more"><a href='index.php?page=stats&amp;view=post&amp;post=903&amp;blog=35104158'><img src="https://dashboard.wordpress.com/i/stats-icon.png" alt="More stats" /></a></td><td class="views">5</td></tr>
+						<tr class="alternate"><td class="label other"><a href='index.php?page=stats&amp;view=postviews&amp;date=2013-12-17&amp;blog=35104158'>Other posts</a></td><td class="more"></td><td class="views">39</td></tr>
+						<tr class="total"><td class="label"><strong>Total views of posts on your blog</strong></td><td class="more"></td><td class="views"><strong>240</strong></td></tr>
+					</table>
+				</div>
+		</div>
+</div>
+<div id="clicks" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Clicks</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab today"><a class="active" href="javascript:void(null);">Today</a></li><li class="tab yesterday"><a href="javascript:void(null);">Yesterday</a></li><li class="link"><a href="index.php?page=stats&amp;view=clicks&amp;summarize&amp;numdays=7&amp;blog=35104158">Summaries</a></li>	</ul>
+		<div class="today">
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>URL</th><th class="views">Clicks</th></tr>
+						<tr class=" click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://clockworkmod.com/rommanager'>clockworkmod.com/rommanager</a></span></td><td class="views">2</td></tr>
+								<tr class="alternate click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://cmw.cmfs.me/common/heimdall_v1.4rc1_x64.tar'>cmw.cmfs.me/common/heimdall_v1.4rc1_x64.tar</a></span></td><td class="views">1</td></tr>
+							<tr class="total"><td class="label"><a href='index.php?page=stats&amp;view=clicks&amp;date=2013-12-18&amp;blog=35104158'><strong>Total clicks on links on your blog</strong></a></td><td class="views"><strong>3</strong></td></tr>
+					</table>
+				</div>
+				<div class="yesterday"style='display:none'>
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>URL</th><th class="views">Clicks</th></tr>
+						<tr class=" click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://clockworkmod.com/rommanager'>clockworkmod.com/rommanager</a></span></td><td class="views">5</td></tr>
+				
+			<tr class="click togglenext alternate"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="toggler">play.google.com</span></td><td class="views">5</td></tr>
+			<tr class="table" style="display:none"><td colspan="2"><table>
+
+							<tr class="alternate click"><td class="label"><a href='https://play.google.com/store/apps/details?id=org.gege.caldavsyncadapter'>play.google.com/store/apps/details?id=org.gege.caldavsyncadapter</a></td><td class="views">4</td></tr>
+								<tr class=" click"><td class="label"><a href='https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup'>play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup</a></td><td class="views">1</td></tr>
+							</table></tr>
+			
+			<tr class="click togglenext"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="toggler">cmw.cmfs.me</span></td><td class="views">4</td></tr>
+			<tr class="table" style="display:none"><td colspan="2"><table>
+
+							<tr class=" click"><td class="label"><a href='http://cmw.cmfs.me/common/heimdall_v1.4rc1_x64.tar'>cmw.cmfs.me/common/heimdall_v1.4rc1_x64.tar</a></td><td class="views">2</td></tr>
+								<tr class="alternate click"><td class="label"><a href='http://cmw.cmfs.me/common/heimdall_v1.4rc1_x86.tar'>cmw.cmfs.me/common/heimdall_v1.4rc1_x86.tar</a></td><td class="views">2</td></tr>
+							</table></tr>
+			
+			<tr class="click togglenext alternate"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="toggler">linuxtv.org</span></td><td class="views">4</td></tr>
+			<tr class="table" style="display:none"><td colspan="2"><table>
+
+							<tr class="alternate click"><td class="label"><a href='http://linuxtv.org/wiki/index.php/Main_Page'>linuxtv.org/wiki/index.php/Main_Page</a></td><td class="views">3</td></tr>
+								<tr class=" click"><td class="label"><a href='http://linuxtv.org/wiki/index.php/TBS6284'>linuxtv.org/wiki/index.php/TBS6284</a></td><td class="views">1</td></tr>
+							</table></tr>
+							<tr class=" click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://download2.clockworkmod.com/recoveries/recovery-clockwork-touch-6.0.3.6-i9300.img'>download2.clockworkmod.com/recoveries/recovery-clockwork-touch-6.0.3.6-i9300.img</a></span></td><td class="views">4</td></tr>
+								<tr class="alternate click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://download.cyanogenmod.org/?type=stable&amp;device=i9300'>download.cyanogenmod.org/?type=stable&amp;device=i9300</a></span></td><td class="views">3</td></tr>
+				
+			<tr class="click togglenext"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="toggler">wiki.cyanogenmod.org</span></td><td class="views">2</td></tr>
+			<tr class="table" style="display:none"><td colspan="2"><table>
+
+							<tr class=" click"><td class="label"><a href='http://wiki.cyanogenmod.org/index.php?title=Devices#vendor=%22Samsung%22;type=%22phone%22;searchable=%22galaxy%20s%20iii%22;'>wiki.cyanogenmod.org/index.php?title=Devices#vendor=%22Samsung%22;type=%22phone%22;searchable=%22galaxy%20s%20iii%22;</a></td><td class="views">1</td></tr>
+								<tr class="alternate click"><td class="label"><a href='http://wiki.cyanogenmod.org/w/Google_Apps'>wiki.cyanogenmod.org/w/Google_Apps</a></td><td class="views">1</td></tr>
+							</table></tr>
+							<tr class="alternate click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='https://developer.android.com/sdk/'>developer.android.com/sdk/</a></span></td><td class="views">2</td></tr>
+								<tr class=" click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://www.cyanogenmod.org/'>cyanogenmod.org</a></span></td><td class="views">1</td></tr>
+								<tr class="alternate click"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://postimg.org/image/9gzbp3sy5/'>postimg.org/image/9gzbp3sy5/</a></span></td><td class="views">1</td></tr>
+							<tr class=""><td class="label other"><a href='index.php?page=stats&amp;view=clicks&amp;date=2013-12-17&amp;blog=35104158'>Other links</a></td><td class="views">3</td></tr>
+						<tr class="total"><td class="label"><a href='index.php?page=stats&amp;view=clicks&amp;date=2013-12-17&amp;blog=35104158'><strong>Total clicks on links on your blog</strong></a></td><td class="views"><strong>34</strong></td></tr>
+					</table>
+				</div>
+		</div>
+</div>
+<div id="searchterms" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Search Engine Terms</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab today"><a class="active" href="javascript:void(null);">Today</a></li><li class="tab yesterday"><a href="javascript:void(null);">Yesterday</a></li><li class="link"><a href="index.php?page=stats&amp;view=searchterms&amp;summarize&amp;numdays=7&amp;blog=35104158">Summaries</a></li>	</ul>
+		<div class="today">
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>Search</th><th class="views">Views</th></tr>
+					<tr class="alternate"><td class="label">dm-crypt mount galaxy s3</td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label other"><a target="_blank" href="http://en.support.wordpress.com/stats/#search-engine-terms">Unknown search terms</a></td><td class="views">5</td></tr>
+						<tr class="total"><td class="label"><strong>Total search terms</strong></td><td class="views"><strong>6</strong></td></tr>
+					</table>
+				</div>
+				<div class="yesterday"style='display:none'>
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>Search</th><th class="views">Views</th></tr>
+					<tr class="alternate"><td class="label">sudo systemctl enable networkmanager</td><td class="views">1</td></tr>
+						<tr><td class="label">6.0.3.6 recovery touch</td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label">how to get networkmanager working in arch linux</td><td class="views">1</td></tr>
+						<tr><td class="label">clockworkmod download</td><td class="views">1</td></tr>
+						<tr class="alternate"><td class="label">install clockwork mod touch download mode s3</td><td class="views">1</td></tr>
+						<tr><td class="label">ffmpeg combine multiple inputs</td><td class="views">1</td></tr>
+						<tr><td class="label other"><a target="_blank" href="http://en.support.wordpress.com/stats/#search-engine-terms">Unknown search terms</a></td><td class="views">157</td></tr>
+						<tr class="total"><td class="label"><strong>Total search terms</strong></td><td class="views"><strong>163</strong></td></tr>
+					</table>
+				</div>
+		</div>
+</div>
+<div id="referrers" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Referrers</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab today"><a class="active" href="javascript:void(null);">Today</a></li><li class="tab yesterday"><a href="javascript:void(null);">Yesterday</a></li><li class="link"><a href="index.php?page=stats&amp;view=referrers&amp;summarize&amp;numdays=7&amp;blog=35104158">Summaries</a></li>	</ul>
+		<div class="today">
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>Referrer</th><th class="stats-follow"></th><th class="views">Views</th></tr>
+					<tr class="referrer togglenext alternate"><td class="label"><img alt="" src="/i/stats/search-engine.png" class="avatar" /><span class="toggler">Search Engines</span></td><td class="stats-follow"></td><td class="views">11</td></tr>
+			<tr class="table" style="display:none"><td colspan="3"><table>
+								<tr class="referrer togglenext"><td class="label"><img alt="" src="https://secure.gravatar.com/blavatar/6741a05f4bc6e5b65f504c4f3df388a1?s=20" class="avatar" /><span class="toggler">Google Search</span></td><td class="stats-follow"></td><td class="views">11</td></tr>
+					<tr class="table" style="display:none"><td colspan="3"><table>
+											<tr class="alternate referrer"><td class="label"><a href='http://www.google.com/'>google.com</a></td><td class="views">5</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.com/search'>google.com/search</a></td><td class="views">2</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.pl'>google.pl</a></td><td class="views">1</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.com.br/search'>google.com.br/search</a></td><td class="views">1</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.co.uk'>google.co.uk</a></td><td class="views">1</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.ca/search'>google.ca/search</a></td><td class="views">1</td></tr>
+											</table></td></tr>
+								</table></td></tr>
+							<tr class=" referrer"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='https://duckduckgo.com/'>duckduckgo.com</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							<tr class="total"><td class="label"><a href='index.php?page=stats&amp;view=referrers&amp;date=2013-12-18&amp;blog=35104158'><strong>Total views referred by links to your blog</strong></a></td><td class="stats-follow"></td><td class="views"><strong>12</strong></td></tr>
+					</table>
+				</div>
+				<div class="yesterday"style='display:none'>
+				<table class="statsDay" cellspacing="0">
+		<tr class="h"><th>Referrer</th><th class="stats-follow"></th><th class="views">Views</th></tr>
+					<tr class="referrer togglenext alternate"><td class="label"><img alt="" src="/i/stats/search-engine.png" class="avatar" /><span class="toggler">Search Engines</span></td><td class="stats-follow"></td><td class="views">188</td></tr>
+			<tr class="table" style="display:none"><td colspan="3"><table>
+								<tr class="referrer togglenext"><td class="label"><img alt="" src="https://secure.gravatar.com/blavatar/6741a05f4bc6e5b65f504c4f3df388a1?s=20" class="avatar" /><span class="toggler">Google Search</span></td><td class="stats-follow"></td><td class="views">186</td></tr>
+					<tr class="table" style="display:none"><td colspan="3"><table>
+											<tr class="alternate referrer"><td class="label"><a href='http://www.google.com/search'>google.com/search</a></td><td class="views">33</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.com/'>google.com</a></td><td class="views">25</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.co.uk/search'>google.co.uk/search</a></td><td class="views">8</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.ca'>google.ca</a></td><td class="views">8</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.co.in'>google.co.in</a></td><td class="views">7</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.de/search'>google.de/search</a></td><td class="views">7</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.com.br'>google.com.br</a></td><td class="views">6</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.ca/search'>google.ca/search</a></td><td class="views">5</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.co.uk'>google.co.uk</a></td><td class="views">5</td></tr>
+												<tr class=" referrer"><td class="label"><a href='http://www.google.it'>google.it</a></td><td class="views">4</td></tr>
+												<tr class="alternate referrer"><td class="label"><a href='http://www.google.de'>google.de</a></td><td class="views">3</td></tr>
+											</table></td></tr>
+											<tr class="alternate referrer"><td class="label"><img alt="" src="https://secure.gravatar.com/blavatar/112a7e096595d1c32c4ecdfd9e56b66c?s=20" class="avatar" /><span class="nontoggler"><a href='http://www.bing.com'>Bing</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+												<tr class=" referrer"><td class="label"><img alt="" src="https://secure.gravatar.com/blavatar/6c3cff486df5f19e5aacc916f4bab366?s=20" class="avatar" /><span class="nontoggler"><a href='http://www.google.com/m'>Google Mobile</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+									</table></td></tr>
+							<tr class=" referrer"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://askubuntu.com/questions/37267/how-can-i-access-flash-files-from-streaming-websites'>askubuntu.com/questions/37267/how-can-i-access-flash-files-from-streaming-websites</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr class="alternate referrer"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://en.wikipedia.org/wiki/Conky_(software)'>en.wikipedia.org/wiki/Conky_(software)</a></span></td><td class="stats-follow"></td><td class="views">2</td></tr>
+								<tr class=" referrer"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://linuxforum.ru/post.php?tid=32686'>linuxforum.ru/post.php?tid=32686</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class="alternate referrer"><td class="label"><img alt="" src="https://secure.gravatar.com/blavatar/2343ec78a04c6ea9d80806345d31fd78?s=20" class="avatar" /><span class="nontoggler"><a href='http://www.facebook.com/'>Facebook</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+								<tr class=" referrer"><td class="label"><img alt="" src="/i/stats/square-grey.png" class="avatar" /><span class="nontoggler"><a href='http://www.ecosia.org/search?q=archlinux+gnome+3+nm-applet+not+working'>ecosia.org/search?q=archlinux+gnome+3+nm-applet+not+working</a></span></td><td class="stats-follow"></td><td class="views">1</td></tr>
+							<tr class="total"><td class="label"><a href='index.php?page=stats&amp;view=referrers&amp;date=2013-12-17&amp;blog=35104158'><strong>Total views referred by links to your blog</strong></a></td><td class="stats-follow"></td><td class="views"><strong>195</strong></td></tr>
+					</table>
+				</div>
+		</div>
+</div>
+<div id="stats-comments" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Comments</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab comment_authors"><a class="active" href="javascript:void(null);">Top Recent Commenters</a></li><li class="tab comment_posts"><a href="javascript:void(null);">Most Commented</a></li><li class="tab comment_summary"><a href="javascript:void(null);">Summary</a></li>	</ul>
+	<div class="comment_authors">
+	<table class="statsDay" cellspacing="0">
+	<tr class="h"><th class="label">Commenter</th><th class='stats-follow'></th><th class="views">Comments</th></tr>
+			<tr class="alternate">
+		<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/30cd7452025d045bf63cf7eab9be11c9?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?user_id=34974800'><b>Drunk3nm0nk3y</b></a></td><td class="stats-follow"></td><td class="views">8</td>
+		</tr>
+				<tr class="">
+		<td class="label-avatar"><img alt='' src='https://1.gravatar.com/avatar/a48f5836aa1343c081855bc0a6df6b86?s=32&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?s=stevensonmt@yahoo.com'><b>llogg</b></a></td><td class="stats-follow"></td><td class="views">5</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/9eb944c87d23cce434139a4857ecd999?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?user_id=17465007'><b>Bosstiger</b></a></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_comments&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;tigerboose.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/tigerboose.wordpress.com&quot;,&quot;blog_id&quot;:16843490,&quot;site_id&quot;:16843490,&quot;blog_title&quot;:&quot;tigerboose&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">3</td>
+		</tr>
+				<tr class="">
+		<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/62cba743e37a7ff00da9ca7a40ae6ecd?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?user_id=34973760'><b>funkym0nk3y</b></a></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">3</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label-avatar"><img alt='' src='https://1.gravatar.com/avatar/4259220f735855f6fe0dd93bfeff45a0?s=32&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?user_id=37282757'><b>h0nk3ym0nk3y</b></a></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_author&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;evilshit.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/evilshit.wordpress.com&quot;,&quot;blog_id&quot;:35104158,&quot;site_id&quot;:35104158,&quot;blog_title&quot;:&quot;Linux M0nk3ys&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">3</td>
+		</tr>
+				<tr class="">
+		<td class="label-avatar"><img alt='' src='https://0.gravatar.com/avatar/3ae3d87a1a0103e19b679e27689deb5a?s=32&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&#038;r=G' class='avatar avatar-32' height='32' width='32' /><a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?user_id=16477041'><b>Satria</b></a></td><td class="stats-follow"><div class="wpcom-follow-container" data-json="{&quot;params&quot;:{&quot;stat-source&quot;:&quot;stats_comments&quot;,&quot;follow-text&quot;:&quot;Follow&quot;,&quot;following-text&quot;:&quot;Following&quot;,&quot;following-hover-text&quot;:&quot;Unfollow&quot;,&quot;blog_domain&quot;:&quot;satriaskyterror.wordpress.com&quot;,&quot;blog_url&quot;:&quot;http:\/\/satriaskyterror.wordpress.com&quot;,&quot;blog_id&quot;:15885120,&quot;site_id&quot;:15885120,&quot;blog_title&quot;:&quot;Another Satria&amp;#039;s Project&quot;,&quot;is_following&quot;:false},&quot;type&quot;:&quot;follow&quot;}"></div></td><td class="views">2</td>
+		</tr>
+			</table>
+		</div>
+
+	<div class="comment_posts">
+	<table class="statsDay" cellspacing="0">
+	<tr class="h"><th class="label">Post</th><th class="views">Comments</th></tr>
+			<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2012/04/22/play-flash-videos-with-the-mediaplayer-of-your-choice/'>How to play flash videos with the media player of your choice</a></td><td class="views">9</td>
+		</tr>
+				<tr class="">
+		<td class="label"><a href='http://evilshit.wordpress.com/2012/09/15/how-to-make-networkmanager-and-network-manager-applet-work-on-arch-linux-with-gnome3/'>How to install and configure NetworkManager and network-manager-applet on Arch Linux with Gnome3</a></td><td class="views">8</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2012/10/22/how-to-mount-a-luks-encrypted-partition-on-boot/'>How to mount a LUKS encrypted partition on boot</a></td><td class="views">5</td>
+		</tr>
+				<tr class="">
+		<td class="label"><a href='http://evilshit.wordpress.com/2012/08/09/how-to-remove-overscan-on-hdmi-1080p-output/'>How to remove overscan on HDMI 1080p output using xrandr</a></td><td class="views">5</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/05/23/how-to-install-slackware-arm-on-raspberry-pi/'>How to install Slackware ARM on a Raspberry Pi</a></td><td class="views">4</td>
+		</tr>
+				<tr class="">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualization-tool-for-your-desktop/'>ConkyPress a WordPress stats visualization tool for your desktop</a></td><td class="views">4</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/10/17/how-to-install-clockworkmod-recovery-and-cyanogenmod-on-samsung-galaxy-s3/'>How to install ClockworkMod Recovery and CyanogenMod on Samsung Galaxy S3</a></td><td class="views">3</td>
+		</tr>
+				<tr class="">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/08/10/how-to-stream-multiple-tv-channels-with-a-single-dvb-t-tuner-using-vlc/'>How to stream multiple TV channels with a single DVB-T tuner using VLC</a></td><td class="views">2</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2012/06/28/how-to-encrypt-a-string-with-rot13-one-liner/'>How to encrypt a string with ROT13 (one liner)</a></td><td class="views">2</td>
+		</tr>
+				<tr class="">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/11/19/how-to-install-a-caldav-and-carddav-server-using-radicale/'>How to install a CalDav and CardDav server using Radicale</a></td><td class="views">1</td>
+		</tr>
+				<tr class="alternate">
+		<td class="label"><a href='http://evilshit.wordpress.com/2013/10/14/how-to-install-bumblebee-on-arch-linux/'>How to install Bumblebee on Arch Linux</a></td><td class="views">1</td>
+		</tr>
+			</table>
+		</div>
+
+	
+	<div class="comment_summary">
+	<table class="statsDay" cellspacing="0">
+	<tr class="alternate">
+		<td class="label">Comments per month:</td>
+		<td class="summary">3</td>
+	</tr>
+	<tr class="">
+		<td class="label">Total comments:</td>
+		<td class="summary">49</td>
+	</tr>
+	<tr class="alternate">
+			<td class="label">Most active day:</td>
+			<td class="summary">
+	November 21, 2013	</td>
+	</tr>
+	<tr class="">
+		<td class="label">Most active time of day:</td>
+		<td class="summary">07:00</td>
+	</tr>
+	<tr class="alternate">
+		<td class="label">Most commented recent post:</td>
+		<td class="summary"><a href='http://evilshit.wordpress.com/2012/04/22/play-flash-videos-with-the-mediaplayer-of-your-choice/'>How to play flash videos with the media player of your choice</a></td>
+	</tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	<tr class=""></tr>
+	</table>
+	</div>
+	</div>
+</div>
+<div id="general" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Totals, Followers & Shares</span></h3>
+<div class="inside">
+	<ul class="metabox-tabs">
+<li class="tab totals"><a class="active" href="javascript:void(null);">Totals</a></li><li class="tab shares"><a href="javascript:void(null);">Shares</a></li><li class="tab spam"><a href="javascript:void(null);">Spam</a></li>	</ul>
+<div class="totals">
+	<div class="totals-row1">
+		<h4>Content</h4>
+		<p class="totals-posts">41 <em>Posts</em></p>
+		<p class="totals-categories">16 <em>Categories</em></p>
+		<p class="totals-tags">303 <em>Tags</em></p>
+	</div>
+<div class="totals-row3"><h4>Followers (includes <a href="http://en.support.wordpress.com/publicize/">Publicize</a>)</h4><p class="totals-blogfollowers">6 <em><a title="People who follow your blog" href="index.php?page=stats&amp;blog=35104158&amp;blog_subscribers">Blog</a></em></p><p class="totals-commentfollowers">6 <em><a title="Commenters who checked the &quot;Notify me of follow-up comments via email&quot; checkbox on your individual posts" href="index.php?page=stats&amp;blog=35104158&amp;comment_subscribers">Comments</a></em></p><p title="People who get to your blog from tweets sent using Publicize" class="totals-twitterfollowers">1 <em>Twitter</em></p></div></div>
+<div class="shares"><p><span>Shares:</span> <a href="index.php?page=stats&amp;blog=35104158&amp;blog_shares">17</a></p></div><div class="spam"><p class='akismet-right-now'><a href="http://akismet.com/?return=true">Akismet</a> has protected your site from <a href="https://evilshit.wordpress.com/wp-admin/index.php?page=akismet-stats-display">9,054 spam comments</a> already. <br />There's nothing in your <a href='https://evilshit.wordpress.com/wp-admin/edit-comments.php?comment_status=spam'>spam queue</a> at the moment.</p>
+</div></div>
+</div>
+</div>	</div><div class='postbox-container' style='width:49%;'>
+<div id="side-sortables" class="meta-box-sortables"></div></div></div>
+</div>
+
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter">
+	<script type="text/javascript"> jQuery("#wordads_menu_item").parent().hide(); </script>	<p id="footer-left" class="alignleft">
+		<span id="footer-thankyou">Thank you for creating with <a href="http://wordpress.com/">WordPress</a></span> &bull; <a href="http://en.support.wordpress.com/">Support</a> &bull; <a href="http://en.forums.wordpress.com">Forums</a> &bull; <a href="http://learn.wordpress.com/">Learn WordPress &#8212; Tutorials and Walkthroughs</a>	</p>
+	<p id="footer-upgrade" class="alignright">
+			</p>
+	<div class="clear"></div>
+</div>
+		<script>
+        	( function( $ ) {
+            	jQuery( document ).on( 'ready', function() {
+					$( '#add-internal-note-link' ).click(
+						function( e ) {
+							e.preventDefault();
+							$( '#add-internal-note' ).show();	
+						}
+					);
+			} ) } )( jQuery );
+		</script>
+
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","uid":"49f2e4c96641a7caa92adf2c0658188c","labels":"language.en,type.wpcom,wp.loggedin.free,wp.admin"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?uid=49f2e4c96641a7caa92adf2c0658188c&labels=language.en%2Ctype.wpcom%2Cwp.loggedin.free%2Cwp.admin" height="1" width="1" alt="" /></div></noscript>
+
+<script src="https://ssl-stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+ st_go({
+  admin:1,
+  blog:35104158,
+  user_id:34974800,
+  page:"index.php?page=stats"
+ });
+</script>
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201351ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":"30cd7452025d045bf63cf7eab9be11c9"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq nojs ltr" role="navigation">
+			<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-menu-toggle"><a class="ab-item"  href="#" title="Menu"><span class="ab-icon"></span></a>		</li>
+		<li id="wp-admin-bar-newdash" class="menupop"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/"><span class="ab-item" id="newdash-icon">WordPress.com</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-newdash-default" class="ab-submenu">
+		<li id="wp-admin-bar-newdash-new-post"><a class="ab-item"  href="https://wordpress.com/post/">New Post</a>		</li>
+		<li id="wp-admin-bar-newdash-read-blogs"><a class="ab-item"  href="https://wordpress.com/">Reader</a>		</li>
+		<li id="wp-admin-bar-newdash-notifications"><a class="ab-item"  href="https://wordpress.com/notifications/">Notifications</a>		</li>
+		<li id="wp-admin-bar-newdash-stats"><a class="ab-item"  href="https://wordpress.com/my-stats/">Stats</a>		</li>
+		<li id="wp-admin-bar-newdash-my-blogs"><a class="ab-item"  href="https://wordpress.com/my-blogs/">My Blog</a>		</li>
+		<li id="wp-admin-bar-newdash-freshly-pressed"><a class="ab-item"  href="https://wordpress.com/fresh/">Freshly Pressed</a>		</li>
+		<li id="wp-admin-bar-newdash-settings"><a class="ab-item"  href="https://wordpress.com/settings/">Settings</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-jumptotop-button-menu"><a class="ab-item"  href="#"><div id="jumptotop"><span class="noticon noticon-top"></span></div></a>		</li>
+		<li id="wp-admin-bar-blog" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://evilshit.wordpress.com/">Linux M0nk3ys</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-default" class="ab-submenu">
+		<li id="wp-admin-bar-dashboard-top"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="https://evilshit.wordpress.com/wp-admin/post-new.php?post_type=post">New</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/post-new.php?post_type=post">Post</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-attachment"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/post-new.php?post_type=attachment">Media</a>		</li>
+		<li id="wp-admin-bar-new-link"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/link-add.php">Link</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/edit-comments.php">Comments</a>		</li>
+		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fevilshit.wordpress.com%2Fwp-admin%2F%3Fpage%3Dstats">Customize</a>		</li>
+		<li id="wp-admin-bar-widgets"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/widgets.php">Widgets</a>		</li></ul><ul id="wp-admin-bar-blog-secondary" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-random-post" class="menu-item-random-post"><a class="ab-item"  href="http://evilshit.wordpress.com/?random">Random Post</a>		</li>
+		<li id="wp-admin-bar-theme-mystique"><a class="ab-item"  href="http://theme.wordpress.com/themes/mystique/">Theme: Mystique</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-stats"><a class="ab-item"  href="https://wordpress.com/my-stats/"><div><script type='text/javascript'>var src;if(typeof(window.devicePixelRatio)=='undefined'||window.devicePixelRatio<2){src='/wp-includes/charts/admin-bar-hours-scale.php';}else{src='/wp-includes/charts/admin-bar-hours-scale-2x.php';}document.write('<img style=\'vertical-align: baseline\' src=\''+src+'\' alt=\'Stats\' title=\'Showing site views per hour for the last 48 hours. Click for full Site Stats.\' />');</script></div></a>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form id='adminbarsearch' name='adminbarsearch' action='http://en.search.wordpress.com' method='get'>
+				<input class='adminbar-search-input' name='q' id='q' type='text' value='' maxlength='150' tabindex='10' />
+				<input type="hidden" name="site" value="evilshit.wordpress.com" />
+			</form></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="https://wordpress.com/settings/account/"><span class="ab-display-name">Drunk3nm0nk3y</span><img alt='' src='https://0.gravatar.com/avatar/30cd7452025d045bf63cf7eab9be11c9?s=32&#038;d=mm&#038;r=G' class='avatar avatar-32' height='32' width='32' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info" class="user-info user-info-item"><a class="ab-item" tabindex="-1" href="#"><a href="https://wordpress.com/settings/account/"><img alt='' src='https://0.gravatar.com/avatar/30cd7452025d045bf63cf7eab9be11c9?s=128&#038;d=mm&#038;r=G' class='avatar avatar-128' height='128' width='128' /><span class="display-name">Drunk3nm0nk3y</span><span class="username">drunkenm0nk3y</span></a></a>		</li>
+		<li id="wp-admin-bar-find-friends" class="user-info-item"><a class="ab-item"  href="https://wordpress.com/find-friends/">Find Friends</a>		</li>
+		<li id="wp-admin-bar-manage-blogs" class="user-info-item"><a class="ab-item"  href="https://wordpress.com/my-blogs/">Manage My Blogs</a>		</li>
+		<li id="wp-admin-bar-help" class="user-info-item"><a class="ab-item"  href="http://en.support.wordpress.com/">Help</a>		</li>
+		<li id="wp-admin-bar-logout" class="user-info-item"><a class="ab-item"  href="https://wordpress.com/wp-login.php?action=logout&#038;redirect_to=https%3A%2F%2Fwordpress.com%2F">Sign Out</a>		</li></ul><ul id="wp-admin-bar-my-sites" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-blog-35104158" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://evilshit.wordpress.com/"><img src="https://s2.wp.com/i/wpmini-blue.png" alt="Blavatar" width="16" height="16" />Linux M0nk3ys</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-35104158-default" class="ab-submenu">
+		<li id="wp-admin-bar-blog-35104158-d"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-blog-35104158-n"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/post-new.php">New Post</a>		</li>
+		<li id="wp-admin-bar-blog-35104158-s"><a class="ab-item"  href="https://wordpress.com/my-stats/?blog=35104158">Site Stats</a>		</li>
+		<li id="wp-admin-bar-blog-35104158-c"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+		<li id="wp-admin-bar-blog-35104158-v"><a class="ab-item"  href="https://evilshit.wordpress.com">Read Blog</a>		</li></ul></div>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-notes" class="menupop"><div class="ab-item ab-empty-item" ><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read">
+						<span class="noticon noticon-notification"></span>
+						</span></div><div id="wpnt-notes-panel" style="display:none" lang="en" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header"></span><span class="wpnt-notes-panel-link"></span></div></div>		</li>
+		<li id="wp-admin-bar-ab-new-post"><a class="ab-item"  href="http://wordpress.com/post/">New Post</a>		</li>
+		<li id="wp-admin-bar-store_link" class="admin-menu-store-link"><a class="ab-item"  href="https://evilshit.wordpress.com/wp-admin/paid-upgrades.php?product=1003&#038;view=purchase&#038;loc=admin-bar&#038;ref=go-pro"><span>Go Premium</span></a>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://evilshit.wordpress.com/wp-login.php?action=logout&#038;_wpnonce=4f01efb2d4">Log Out</a>
+					</div>
+
+		
+<script type="text/javascript">
+/* <![CDATA[ */
+var clickDebugLink;
+
+jQuery(document).ready( function($) {
+	var single = false, w = 1000,
+		supe = false;
+
+	$(document.body).load(function(){ $('#wpadminbar img.grav-hashed').removeClass('grav-hashed'); }); // hack to hide the gravatar hovercard
+
+	if ( single && supe )
+		w = 1385;
+	else if ( supe )
+		w = 1200;
+
+	// debug bar extra
+	clickDebugLink = function( parent_id, obj ) {
+
+		$('#'+parent_id).children('div').hide();
+
+		document.getElementById( obj.href.substr( obj.href.indexOf( '#' ) + 1 ) ).style.display = 'block';
+		$( obj.href.substr( obj.href.indexOf( '#' ) ) ).show()
+
+		$(obj).parent().addClass('current').siblings('li').removeClass('current');
+
+		return false;
+	};
+
+	$( '#wpadminbar #wp-admin-bar-shortlink' ).click( function() {
+		$( '#adminbar-shortlink-input' ).select();
+	});
+
+	$( '#wpadminbar #adminbarsearch .adminbar-search-input' ).focus( function() {
+		$( '#wpadminbar #adminbarsearch input' ).addClass( 'search-input-focus' );
+		$( '#wpadminbar #wp-admin-bar-search' ).addClass( 'search-input-focus' );
+	});
+
+	$( '#wpadminbar #adminbarsearch .adminbar-search-input' ).focusout( function() {
+		$( '#wpadminbar #adminbarsearch input.adminbar-search-input' ).removeClass( 'search-input-focus' );
+		$( '#wpadminbar #wp-admin-bar-search' ).removeClass( 'search-input-focus' );
+	});
+
+});
+/* ]]> */
+</script>
+	<div class="wpcom-bubble action-bubble">
+		<div class="bubble-txt"></div>
+	</div>
+	<script type="text/javascript">function hideBubble() { jQuery('body').append( jQuery( 'div.wpcom-bubble' ).removeClass( 'fadein' ) ).off( 'click.bubble touchstart.bubble' ); jQuery(document).off( 'scroll.bubble' ); };</script>
+		<script type="text/javascript">
+	jQuery( '#wp-admin-bar-jumptotop-button-menu a' ).click( function( e ) {
+		e.preventDefault();
+		jQuery( 'html, body' ).animate( { scrollTop: 0 }, 'fast' );
+	} );
+	function hideShowTbJumpToTop() {
+		var total_width = 0;
+		// Calculate total width taken by li's minus our button to see if we it'll
+		// overlap with other toolbar menus.
+		jQuery( '#wp-admin-bar-root-default > li' ).each( function() {
+			var self = jQuery( this );
+			if ( 'wp-admin-bar-jumptotop-button-menu' != self.attr( 'id' ) )
+				total_width += self.width();
+		});
+		if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() >= 350 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) < 0 ) {
+			if ( jQuery( '#wp-admin-bar-jumptotop-button-menu' ).position()['left'] - total_width < 10 )
+			   return;
+			jQuery( '#jumptotop' ).animate( { 'top': 0 }, 'fast' );
+		} else if (  jQuery( window ).scrollTop() < 1 && parseInt( jQuery( '#jumptotop' ).css( 'top' ) ) >= 0 ) {
+			jQuery( '#jumptotop' ).animate( { 'top': '-50px' }, 'fast' );
+		}
+	}
+	// handle on page load if auto scrolling to a position
+	hideShowTbJumpToTop();
+	// bind to scrolll event
+	var jumpToTopTimer = null;
+	jQuery( window ).scroll( function() {
+		clearTimeout( jumpToTopTimer );
+		jumpToTopTimer = setTimeout( jumpToTopRefresh, 150 );
+	} );
+	var jumpToTopRefresh = function() {
+		hideShowTbJumpToTop();
+	};
+	</script>
+		<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<div class="wp-auth-check-close" tabindex="0" title="Close"></div>
+			<div id="wp-auth-check-form" data-src="https://evilshit.wordpress.com/wp-login.php?interim-login=1"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Session expired</b></p>
+		<p><a href="https://evilshit.wordpress.com/wp-login.php" target="_blank">Please log in again.</a>
+		The login page will open in a new window. After logging in you can close it and return to this page.</p>
+	</div>
+	</div>
+	</div>
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var heartbeatSettings = {"nonce":"fd0cc88518"};
+var heartbeatSettings = {"nonce":"fd0cc88518"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};
+var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJxtj8sOwiAQRX9IitaEdGNc+xl0mBSwPMJLP19oYsSE1SzOvSd36MsTZWHPAiPVkXJhlCUrD1O9k44nWgPgbEKbGhdYFKB/f1Hfla5geBzRvn0oGwdnjLNDFMtGPFe1G4Zm5CGtyP+8faC5cpIEJMJzNN1k4ve8Kdu9WHmdRH4v63g3t8t1Yey8zDPTH2DVZvc='></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var kissmetrics_api = {"api_key":"39e3e583aca28fab00c85ad9019b51d9f073fc6d","username":"drunkenm0nk3y"};
+var kissmetrics_queries = {"events":[],"properties":[{"Browser_Type":"desktop"}]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/kissmetrics/kissmetrics.js?m=1384543266g&#038;ver=20130513'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpNotesArgs = {"cacheBuster":"20131217","iframeUrl":"https:\/\/widgets.wp.com\/notes\/"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WpcomTrackAdminHelpL10n = {"nonce":"4791de580f"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFkeFOxSAMhV9Ihs5kuX+MzwKs2QWhRUqdvr3MXRN3w+If0vCdU9qDXrPy6KLMwDqwFpyhsKMCQ/I4BH7Qdwpr3JslPHBHWAHrhpNwNe4K9yiJylEWj6yRKtzOhlMiVB/jv3oztweVNaUj3tmvfs2tq6qlDap2coWYT657K4Z3gfKlxd+qQfyw+nmBehZKz5FI+DTFnoGpVGPjwfMz6GbIxNXSZy/14/Y20qLaH9S/pdp6780Dv6aXp+fLND1exnEK36NZvlA='></script>
+
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['pageload._setAccount', 'UA-10673494-4']);
+		_gaq.push(['pageload._setDomainName','.wordpress.com']);
+		_gaq.push(['pageload._setSiteSpeedSampleRate', 1]);
+		_gaq.push(['pageload._trackPageview']);
+
+		
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		
+		</script>
+
+		
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+</body>
+</html>
