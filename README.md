@@ -65,6 +65,8 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 ---------------------
 * v1.0.6
 -- Added number of yesterdays visitors to the overview section
+-- Fixed a critical typo in an elemet of the config.xml
+-- Improvement, inversed order of changelog, newest version is now at top
 * v1.0.5
 -- Fixed/adapted parsing of the comments stats (WordPress changed some stuff)
 -- Improvement, showing an "other posts" entry in the "my top posts" section if there are to many posts to display
