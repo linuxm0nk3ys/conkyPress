@@ -35,7 +35,7 @@ def printStats(gl, soup, adminPageEx):
 		except:
 			pass
 
-		commStats = [['Approved',approved], ['Pending',pending], ['Spam', spam]]
+		commStats = [['Approved',str(int(approved)-int(pending))], ['Pending',pending], ['Spam', spam]]
 
 		# Display the comments stats in the correct color
 		if len(commStats)>=1:

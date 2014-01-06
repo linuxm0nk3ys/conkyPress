@@ -2,7 +2,7 @@ conkyPress
 ==========
 ConkyPress a WordPress stats visualization tool for your desktop
 
-Version: 1.0.6 , 
+Version: 1.0.7 , 
 Author : Drunk3nm0nk3y , 
 Website: http://wp.me/p2nic6-eP
 
@@ -48,12 +48,13 @@ and your blogs URL. You can also use the config.xml to:
 Notice: If you know what you are doing, you can also change the 
 options in the conkyPressRc
 
-4. STARTING & STOPPING
+4. STARTING, STOPPING & RESTARTING
 ---------------------
-Use the provided shell scripts to start/stop conkyPress 
-and remember to make them executable: 
-- Start conkyPress by executing "startConkyPress.sh" 
-- Stop conkyPress by executing "stopConkyPress.sh"
+Use the provided shell script to start/stop/restart conkyPress 
+and remember to make the script executable: 
+- Start conkyPress by executing conkyPress.sh like this "./conkyPress.sh start" 
+- Stop conkyPress by executing conkyPress.sh like this "./conkyPress.sh stop" 
+- Stop conkyPress by executing conkyPress.sh like this "./conkyPress.sh restart" 
 
 5. TROUBLESHOOTING
 ---------------------
@@ -63,6 +64,9 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 
 6. CHANGELOG
 ---------------------
+* v1.0.7
+-- Improvement, replaced start/stop script by an other script. It uses parameters to start, stop or restart conkyPress
+-- Fix in comments section, number of pending posts were added to number of approved posts
 * v1.0.6
 -- Added number of yesterdays visitors to the overview section
 -- Fixed a critical typo in an elemet of the config.xml
