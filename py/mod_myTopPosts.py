@@ -40,7 +40,7 @@ def printStats(gl, soup):
 		# 3.1) print the Author-Top-Posts for Conky
 		print('${font Arial:bold:size=10}'+gl.topicCol+'MY-TOP-POSTS '+gl.topicLineCol+'${hr 2}')
 		for p in postStats:
-			name=p[0]
+			name=gl.removeSubstring(gl.remove_str_list ,p[0])
 			if len(name)>gl.maxTextLen:
 				name=name[0:gl.maxTextLen]+"..."
 			print('$font'+gl.textCol+ name +'$alignr '+gl.numCol+ p[1])

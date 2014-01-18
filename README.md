@@ -2,7 +2,7 @@ conkyPress
 ==========
 ConkyPress a WordPress stats visualization tool for your desktop
 
-Version: 1.0.7 , 
+Version: 1.0.8 Beta , 
 Author : Drunk3nm0nk3y , 
 Website: http://wp.me/p2nic6-eP
 
@@ -64,6 +64,8 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 
 6. CHANGELOG
 ---------------------
+* v1.0.8
+-- Added feature, by using the config.xml it is now possible to filter words in post titels
 * v1.0.7
 -- Improvement, replaced start/stop script by an other script. It uses parameters to start, stop or restart conkyPress
 -- Fix in comments section, number of pending posts were added to number of approved posts

@@ -1,16 +1,5 @@
 #! /usr/bin/env python2.7
 from bs4 import BeautifulSoup
-def removeNonAscii(s): 
-	res="";
-	privious=""
-	for i in s:
-		if ord(i)>31 and ord(i)<128:
-			res=res+i
-			privious=i;
-		elif privious!=' ':
-			res=res+' '
-			privious=' '
-	return res
 
 def printStats(gl, soup):
 	#Private variables
@@ -68,7 +57,7 @@ def printStats(gl, soup):
 		# 3.1) print the Author-Top-Posts for Conky
 		print('${font Arial:bold:size=10}'+ gl.topicCol +'ALL-TOP-POSTS '+gl.topicLineCol+'${hr 2}')
 		for p in postStats:
-			name=removeNonAscii(p[0])
+			name=gl.removeSubstring(gl.remove_str_list ,gl.removeNonAscii(p[0]))
 			if len(name)>gl.maxTextLen:
 				name=name[0:gl.maxTextLen]+"..."
 			# also color own posts differently
