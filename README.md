@@ -66,6 +66,7 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 ---------------------
 * v1.0.8
 -- Added feature, by using the config.xml it is now possible to filter words in post titels
+-- Improvement, added usage Info for restarting to conkyPress.sh 
 * v1.0.7
 -- Improvement, replaced start/stop script by an other script. It uses parameters to start, stop or restart conkyPress
 -- Fix in comments section, number of pending posts were added to number of approved posts

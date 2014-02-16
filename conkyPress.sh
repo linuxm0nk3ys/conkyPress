@@ -35,9 +35,10 @@ stop_cp()
 #
 echo_manual()
 {
-	echo 'Usage:'
+	echo '--- Usage ---'
 	echo 'Starting conkyPress: ./conkyPress.sh start'
 	echo 'Stopping conkyPress: ./conkyPress.sh stop'
+	echo 'Restarting conkyPress: ./conkyPress.sh restart'
 }
 
 if [ $1 ]; then
