@@ -25,7 +25,7 @@ def printStats(gl, soup):
 		# It should be removed from here and accessed from a file with global vars and functions
 
 		#find the table with the users posts
-		myAutherName = (soup.find("span", {"class" : "ab-display-name"}).string).encode('utf-8')
+		myAutherName = (soup.find("span", {"class" : "display-name"}).string).encode('utf-8')
 		authViewToday = soup.find("div", { "id" : "authorviews" }, { "class" : "postbox" }).find("div", { "class" : "today" })
 		authorList = authViewToday.find_all("td", { "class" :"label-avatar"})
 

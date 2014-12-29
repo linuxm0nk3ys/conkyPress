@@ -12,7 +12,7 @@ def printStats(gl, soup):
 	# Start parsing the contents of html
 	#find the table with the users posts
 	try:
-		myAutherName = (soup.find("span", {"class" : "ab-display-name"}).string).encode('utf-8')
+		myAutherName = (soup.find("span", {"class" : "display-name"}).string).encode('utf-8')
 		authViewToday = soup.find("div", { "id" : "authorviews" }, { "class" : "postbox" }).find("div", { "class" : "today" })
 		authorList = authViewToday.find_all("td", { "class" :"label-avatar"})
 
@@ -50,7 +50,7 @@ def printStats(gl, soup):
 			except:
 				pass
 		
-		# There are to many posts to show them all, so lets show the remaining clicks
+		# There are too many posts to show them all, so lets show the remaining clicks
 		try:		
 			if sumOfShown < myTotalViews:
 				print('$font'+gl.textCol+ 'Other posts' +'$alignr '+gl.numCol+ str(myTotalViews - sumOfShown))

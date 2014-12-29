@@ -2,7 +2,7 @@ conkyPress
 ==========
 ConkyPress a WordPress stats visualization tool for your desktop
 
-Version: 1.0.8 Beta , 
+Version: 1.0.9 (stable), 
 Author : Drunk3nm0nk3y , 
 Website: http://wp.me/p2nic6-eP
 
@@ -54,7 +54,7 @@ Use the provided shell script to start/stop/restart conkyPress
 and remember to make the script executable: 
 - Start conkyPress by executing conkyPress.sh like this "./conkyPress.sh start" 
 - Stop conkyPress by executing conkyPress.sh like this "./conkyPress.sh stop" 
-- Stop conkyPress by executing conkyPress.sh like this "./conkyPress.sh restart" 
+- Restart conkyPress by executing conkyPress.sh like this "./conkyPress.sh restart" 
 
 5. TROUBLESHOOTING
 ---------------------
@@ -64,6 +64,11 @@ http://evilshit.wordpress.com/2013/04/20/conkypress-a-wordpress-stats-visualizat
 
 6. CHANGELOG
 ---------------------
+* v1.0.9
+-- Update to match the html-code changes of the wordpress stat pages. This fixes the "my top posts" section
+-- Fixed typos in comments
+-- Fixed typo in the README
+-- ConkyPress moved from BETA to STABLE
 * v1.0.8
 -- Added feature, by using the config.xml it is now possible to filter words in post titels
 -- Improvement, added usage Info for restarting to conkyPress.sh 
